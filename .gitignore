@@ -1,0 +1,19 @@
+# Local IncrediBuild/EC2 configuration - never commit real values
+demo-config.bat
+
+# Build artifacts
+build_threadx/
+build_bare/
+*.exe
+*.o
+*.obj
+*.lib
+*.a
+
+# Logs and monitor captures
+*.log
+*.bmon
+*.bmon.ib_mon
+ib_aws/logs/
+ib_aws/support_build_monitor/
+ib_aws/*.zip

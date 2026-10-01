@@ -1,0 +1,270 @@
+# =============================================================================
+# Makefile.threadx - Eclipse ThreadX RTOS Sensor Demo
+# SCD Training Demo - 02-Feb-2026
+# =============================================================================
+# Build with: make -f Makefile.threadx
+# Clean with: make -f Makefile.threadx clean
+# =============================================================================
+
+# Compiler and flags
+CC = clang
+AR = llvm-ar
+RM = del /F /Q
+RMDIR = if exist
+
+# Directories
+THREADX_COMMON_SRC = threadx/common/src
+THREADX_COMMON_INC = threadx/common/inc
+THREADX_PORT_SRC = threadx_port/src
+THREADX_PORT_INC = threadx_port/inc
+BUILD_DIR = build_threadx
+
+# Include paths
+INCLUDES = -I$(THREADX_COMMON_INC) \
+           -I$(THREADX_PORT_INC) \
+           -I.
+
+# Compiler flags
+CFLAGS = -Wall -Wextra -g -O0 \
+         -DTX_INCLUDE_USER_DEFINE_FILE \
+         $(INCLUDES)
+
+# Linker flags - winmm for multimedia timer
+LDFLAGS = -lwinmm
+
+# =============================================================================
+# ThreadX Library Source Files
+# =============================================================================
+
+TXE_COMMON_SRCS = $(wildcard $(THREADX_COMMON_SRC)/txe_*.c)
+
+TX_COMMON_SRCS = \
+    $(THREADX_COMMON_SRC)/tx_block_allocate.c \
+    $(THREADX_COMMON_SRC)/tx_block_pool_cleanup.c \
+    $(THREADX_COMMON_SRC)/tx_block_pool_create.c \
+    $(THREADX_COMMON_SRC)/tx_block_pool_delete.c \
+    $(THREADX_COMMON_SRC)/tx_block_pool_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_block_pool_initialize.c \
+    $(THREADX_COMMON_SRC)/tx_block_pool_performance_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_block_pool_performance_system_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_block_pool_prioritize.c \
+    $(THREADX_COMMON_SRC)/tx_block_release.c \
+    $(THREADX_COMMON_SRC)/tx_byte_allocate.c \
+    $(THREADX_COMMON_SRC)/tx_byte_pool_cleanup.c \
+    $(THREADX_COMMON_SRC)/tx_byte_pool_create.c \
+    $(THREADX_COMMON_SRC)/tx_byte_pool_delete.c \
+    $(THREADX_COMMON_SRC)/tx_byte_pool_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_byte_pool_initialize.c \
+    $(THREADX_COMMON_SRC)/tx_byte_pool_performance_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_byte_pool_performance_system_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_byte_pool_prioritize.c \
+    $(THREADX_COMMON_SRC)/tx_byte_pool_search.c \
+    $(THREADX_COMMON_SRC)/tx_byte_release.c \
+    $(THREADX_COMMON_SRC)/tx_event_flags_cleanup.c \
+    $(THREADX_COMMON_SRC)/tx_event_flags_create.c \
+    $(THREADX_COMMON_SRC)/tx_event_flags_delete.c \
+    $(THREADX_COMMON_SRC)/tx_event_flags_get.c \
+    $(THREADX_COMMON_SRC)/tx_event_flags_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_event_flags_initialize.c \
+    $(THREADX_COMMON_SRC)/tx_event_flags_performance_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_event_flags_performance_system_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_event_flags_set_notify.c \
+    $(THREADX_COMMON_SRC)/tx_event_flags_set.c \
+    $(THREADX_COMMON_SRC)/tx_initialize_high_level.c \
+    $(THREADX_COMMON_SRC)/tx_initialize_kernel_enter.c \
+    $(THREADX_COMMON_SRC)/tx_initialize_kernel_setup.c \
+    $(THREADX_COMMON_SRC)/tx_mutex_cleanup.c \
+    $(THREADX_COMMON_SRC)/tx_mutex_create.c \
+    $(THREADX_COMMON_SRC)/tx_mutex_delete.c \
+    $(THREADX_COMMON_SRC)/tx_mutex_get.c \
+    $(THREADX_COMMON_SRC)/tx_mutex_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_mutex_initialize.c \
+    $(THREADX_COMMON_SRC)/tx_mutex_performance_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_mutex_performance_system_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_mutex_prioritize.c \
+    $(THREADX_COMMON_SRC)/tx_mutex_priority_change.c \
+    $(THREADX_COMMON_SRC)/tx_mutex_put.c \
+    $(THREADX_COMMON_SRC)/tx_queue_cleanup.c \
+    $(THREADX_COMMON_SRC)/tx_queue_create.c \
+    $(THREADX_COMMON_SRC)/tx_queue_delete.c \
+    $(THREADX_COMMON_SRC)/tx_queue_flush.c \
+    $(THREADX_COMMON_SRC)/tx_queue_front_send.c \
+    $(THREADX_COMMON_SRC)/tx_queue_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_queue_initialize.c \
+    $(THREADX_COMMON_SRC)/tx_queue_performance_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_queue_performance_system_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_queue_prioritize.c \
+    $(THREADX_COMMON_SRC)/tx_queue_receive.c \
+    $(THREADX_COMMON_SRC)/tx_queue_send_notify.c \
+    $(THREADX_COMMON_SRC)/tx_queue_send.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_ceiling_put.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_cleanup.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_create.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_delete.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_get.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_initialize.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_performance_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_performance_system_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_prioritize.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_put_notify.c \
+    $(THREADX_COMMON_SRC)/tx_semaphore_put.c \
+    $(THREADX_COMMON_SRC)/tx_thread_create.c \
+    $(THREADX_COMMON_SRC)/tx_thread_delete.c \
+    $(THREADX_COMMON_SRC)/tx_thread_entry_exit_notify.c \
+    $(THREADX_COMMON_SRC)/tx_thread_identify.c \
+    $(THREADX_COMMON_SRC)/tx_thread_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_thread_initialize.c \
+    $(THREADX_COMMON_SRC)/tx_thread_performance_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_thread_performance_system_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_thread_preemption_change.c \
+    $(THREADX_COMMON_SRC)/tx_thread_priority_change.c \
+    $(THREADX_COMMON_SRC)/tx_thread_relinquish.c \
+    $(THREADX_COMMON_SRC)/tx_thread_reset.c \
+    $(THREADX_COMMON_SRC)/tx_thread_resume.c \
+    $(THREADX_COMMON_SRC)/tx_thread_shell_entry.c \
+    $(THREADX_COMMON_SRC)/tx_thread_sleep.c \
+    $(THREADX_COMMON_SRC)/tx_thread_stack_analyze.c \
+    $(THREADX_COMMON_SRC)/tx_thread_stack_error_handler.c \
+    $(THREADX_COMMON_SRC)/tx_thread_stack_error_notify.c \
+    $(THREADX_COMMON_SRC)/tx_thread_suspend.c \
+    $(THREADX_COMMON_SRC)/tx_thread_system_preempt_check.c \
+    $(THREADX_COMMON_SRC)/tx_thread_system_resume.c \
+    $(THREADX_COMMON_SRC)/tx_thread_system_suspend.c \
+    $(THREADX_COMMON_SRC)/tx_thread_terminate.c \
+    $(THREADX_COMMON_SRC)/tx_thread_time_slice_change.c \
+    $(THREADX_COMMON_SRC)/tx_thread_time_slice.c \
+    $(THREADX_COMMON_SRC)/tx_thread_timeout.c \
+    $(THREADX_COMMON_SRC)/tx_thread_wait_abort.c \
+    $(THREADX_COMMON_SRC)/tx_time_get.c \
+    $(THREADX_COMMON_SRC)/tx_time_set.c \
+    $(THREADX_COMMON_SRC)/tx_timer_activate.c \
+    $(THREADX_COMMON_SRC)/tx_timer_change.c \
+    $(THREADX_COMMON_SRC)/tx_timer_create.c \
+    $(THREADX_COMMON_SRC)/tx_timer_deactivate.c \
+    $(THREADX_COMMON_SRC)/tx_timer_delete.c \
+    $(THREADX_COMMON_SRC)/tx_timer_expiration_process.c \
+    $(THREADX_COMMON_SRC)/tx_timer_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_timer_initialize.c \
+    $(THREADX_COMMON_SRC)/tx_timer_performance_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_timer_performance_system_info_get.c \
+    $(THREADX_COMMON_SRC)/tx_timer_system_activate.c \
+    $(THREADX_COMMON_SRC)/tx_timer_system_deactivate.c \
+    $(THREADX_COMMON_SRC)/tx_timer_thread_entry.c \
+    $(THREADX_COMMON_SRC)/tx_trace_buffer_full_notify.c \
+    $(THREADX_COMMON_SRC)/tx_trace_disable.c \
+    $(THREADX_COMMON_SRC)/tx_trace_enable.c \
+    $(THREADX_COMMON_SRC)/tx_trace_event_filter.c \
+    $(THREADX_COMMON_SRC)/tx_trace_event_unfilter.c \
+    $(THREADX_COMMON_SRC)/tx_trace_initialize.c \
+    $(THREADX_COMMON_SRC)/tx_trace_interrupt_control.c \
+    $(THREADX_COMMON_SRC)/tx_trace_isr_enter_insert.c \
+    $(THREADX_COMMON_SRC)/tx_trace_isr_exit_insert.c \
+    $(THREADX_COMMON_SRC)/tx_trace_object_register.c \
+    $(THREADX_COMMON_SRC)/tx_trace_object_unregister.c \
+    $(THREADX_COMMON_SRC)/tx_trace_user_event_insert.c
+
+TX_PORT_SRCS = \
+    $(THREADX_PORT_SRC)/tx_initialize_low_level.c \
+    $(THREADX_PORT_SRC)/tx_thread_context_restore.c \
+    $(THREADX_PORT_SRC)/tx_thread_context_save.c \
+    $(THREADX_PORT_SRC)/tx_thread_interrupt_control.c \
+    $(THREADX_PORT_SRC)/tx_thread_schedule.c \
+    $(THREADX_PORT_SRC)/tx_thread_stack_build.c \
+    $(THREADX_PORT_SRC)/tx_thread_system_return.c \
+    $(THREADX_PORT_SRC)/tx_timer_interrupt.c
+
+# =============================================================================
+# Application Source Files
+# =============================================================================
+
+APP_SRCS = sensor_threadx.c
+
+# =============================================================================
+# Object Files
+# =============================================================================
+
+TX_COMMON_OBJS = $(patsubst $(THREADX_COMMON_SRC)/%.c,$(BUILD_DIR)/tx_common/%.o,$(TXE_COMMON_SRCS) $(TX_COMMON_SRCS))
+TX_PORT_OBJS = $(patsubst $(THREADX_PORT_SRC)/%.c,$(BUILD_DIR)/tx_port/%.o,$(TX_PORT_SRCS))
+APP_OBJS = $(patsubst %.c,$(BUILD_DIR)/%.o,$(APP_SRCS))
+
+# ThreadX library
+TX_LIB = $(BUILD_DIR)/libtx.a
+
+# Final executable
+TARGET = sensor_threadx.exe
+
+# =============================================================================
+# Build Targets
+# =============================================================================
+
+.PHONY: all clean dirs lib app
+
+all: dirs lib app
+	@echo "=========================================="
+	@echo " Build complete: $(TARGET)"
+	@echo " Run with: ./$(TARGET)"
+	@echo "=========================================="
+
+dirs:
+	@if not exist $(BUILD_DIR) mkdir $(BUILD_DIR)
+	@if not exist $(BUILD_DIR)\tx_common mkdir $(BUILD_DIR)\tx_common
+	@if not exist $(BUILD_DIR)\tx_port mkdir $(BUILD_DIR)\tx_port
+
+lib: dirs $(TX_LIB)
+	@echo "ThreadX library built: $(TX_LIB)"
+
+app: lib $(TARGET)
+
+$(TX_LIB): $(TX_COMMON_OBJS) $(TX_PORT_OBJS)
+	@echo "Creating ThreadX library..."
+	$(AR) rcs $@ $^
+
+$(TARGET): $(APP_OBJS) $(TX_LIB)
+	@echo "Linking application..."
+	$(CC) -o $@ $(APP_OBJS) -L$(BUILD_DIR) -ltx $(LDFLAGS)
+
+# =============================================================================
+# Compilation Rules
+# =============================================================================
+
+$(BUILD_DIR)/tx_common/%.o: $(THREADX_COMMON_SRC)/%.c
+	@echo "Compiling: $<"
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(BUILD_DIR)/tx_port/%.o: $(THREADX_PORT_SRC)/%.c
+	@echo "Compiling: $<"
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(BUILD_DIR)/%.o: %.c
+	@echo "Compiling: $<"
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# =============================================================================
+# Clean Target
+# =============================================================================
+
+clean:
+	@echo "Cleaning build files..."
+	$(RMDIR) $(BUILD_DIR) rmdir /S /Q $(BUILD_DIR)
+	-$(RM) $(TARGET)
+	@echo "Clean complete."
+
+# =============================================================================
+# Help Target
+# =============================================================================
+
+help:
+	@echo "Eclipse ThreadX Sensor Demo - Build System"
+	@echo "==========================================="
+	@echo ""
+	@echo "Targets:"
+	@echo "  all     - Build everything (default)"
+	@echo "  lib     - Build ThreadX library only"
+	@echo "  app     - Build application (requires lib)"
+	@echo "  clean   - Remove all build files"
+	@echo "  help    - Show this help"
+	@echo ""
+	@echo "Usage:"
+	@echo "  make -f Makefile.threadx"
+	@echo "  make -f Makefile.threadx clean"

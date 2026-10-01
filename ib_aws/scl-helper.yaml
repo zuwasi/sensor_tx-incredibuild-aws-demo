@@ -1,0 +1,196 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'IncrediBuild SCL (Linux Helper) on AWS, joined to a Tailscale tailnet so it can reach an on-prem Coordinator behind NAT.'
+
+Parameters:
+  CoordinatorIP:
+    Type: String
+    Description: 'Tailscale IP (100.x.x.x) of your Windows IncrediBuild Coordinator.'
+    Default: '100.64.0.1'
+  TailscaleAuthKey:
+    Type: String
+    NoEcho: true
+    Description: 'Tailscale auth key (tskey-auth-...) from https://login.tailscale.com/admin/settings/keys'
+    Default: ''
+  IBVersion:
+    Type: String
+    Description: 'IncrediBuild version - MUST match your Initiator/Coordinator (e.g. 10.36.0).'
+    Default: '10.36.0'
+  HelperCores:
+    Type: Number
+    Description: 'Cores allocated to the SCL Helper. Do not exceed the instance vCPU count.'
+    Default: 8
+    MinValue: 1
+    MaxValue: 64
+  InstanceType:
+    Type: String
+    Description: 'EC2 instance type. Needs >= 8 vCPU per IncrediBuild SCL requirements.'
+    Default: 'c6i.2xlarge'
+    AllowedValues:
+      - 'c6i.2xlarge'
+      - 'c6i.4xlarge'
+      - 'c6i.8xlarge'
+      - 'c6a.2xlarge'
+      - 'c6a.4xlarge'
+      - 'm6i.2xlarge'
+      - 'm6i.4xlarge'
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: 'Existing EC2 key pair in this region (for emergency SSH).'
+    Default: 'ib-scl-helper-key'
+  VolumeSize:
+    Type: Number
+    Description: 'EBS gp3 size in GB.'
+    Default: 30
+
+Resources:
+  HelperVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.250.0.0/16
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        - Key: Name
+          Value: 'ib-scl-helper-vpc'
+
+  HelperSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref HelperVPC
+      CidrBlock: 10.250.0.0/24
+      MapPublicIpOnLaunch: true
+      AvailabilityZone: !Select [0, !GetAZs '']
+      Tags:
+        - Key: Name
+          Value: 'ib-scl-helper-subnet'
+
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+
+  AttachGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref HelperVPC
+      InternetGatewayId: !Ref InternetGateway
+
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref HelperVPC
+
+  PublicRoute:
+    Type: AWS::EC2::Route
+    DependsOn: AttachGateway
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+
+  SubnetRouteTableAssoc:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref HelperSubnet
+      RouteTableId: !Ref PublicRouteTable
+
+  HelperSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: 'IncrediBuild SCL Helper - Tailscale-only'
+      VpcId: !Ref HelperVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 100.64.0.0/10
+        - IpProtocol: udp
+          FromPort: 41641
+          ToPort: 41641
+          CidrIp: 0.0.0.0/0
+      SecurityGroupEgress:
+        - IpProtocol: '-1'
+          CidrIp: 0.0.0.0/0
+
+  HelperRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+
+  HelperInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles:
+        - !Ref HelperRole
+
+  HelperInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: !Ref InstanceType
+      KeyName: !Ref KeyName
+      SubnetId: !Ref HelperSubnet
+      SecurityGroupIds:
+        - !Ref HelperSecurityGroup
+      IamInstanceProfile: !Ref HelperInstanceProfile
+      ImageId: ami-0d001f8052688dc45
+      BlockDeviceMappings:
+        - DeviceName: /dev/sda1
+          Ebs:
+            VolumeSize: !Ref VolumeSize
+            VolumeType: gp3
+            DeleteOnTermination: true
+      UserData: !Base64
+        Fn::Join:
+          - ''
+          - - "#!/bin/bash\n"
+            - "set -euo pipefail\n"
+            - "export DEBIAN_FRONTEND=noninteractive\n"
+            - "exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1\n"
+            - "echo '=== [1/5] Base packages + Docker ==='\n"
+            - "apt-get update -y\n"
+            - "apt-get install -y ca-certificates curl docker.io gnupg\n"
+            - "systemctl enable docker && systemctl start docker\n"
+            - "echo '=== [2/5] Install Tailscale ==='\n"
+            - "curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.noarmor.gpg | tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null\n"
+            - "curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.tailscale-keyring.list | tee /etc/apt/sources.list.d/tailscale.list\n"
+            - "apt-get update -y\n"
+            - "apt-get install -y tailscale\n"
+            - "echo '=== [3/5] Join tailnet ==='\n"
+            - !Sub "tailscale up --authkey=${TailscaleAuthKey} --hostname=ib-scl-helper --accept-routes --ssh\n"
+            - "echo 'Tailscale status:'\n"
+            - "tailscale status || true\n"
+            - "echo '=== [4/5] Pull SCL container ==='\n"
+            - !Sub "docker pull public.ecr.aws/incredibuild/scl:latest_${IBVersion}\n"
+            - "echo '=== [5/5] Run SCL Helper ==='\n"
+            - "docker rm -f IncredibuildHelper 2>/dev/null || true\n"
+            - !Sub "docker run --detach --restart unless-stopped --hostname ib-scl-helper --name IncredibuildHelper --env COORD_IP=${CoordinatorIP} --env HELPER_CORES=${HelperCores} --network host public.ecr.aws/incredibuild/scl:latest_${IBVersion}\n"
+            - "echo '=== DONE ==='\n"
+            - "echo 'Helper Tailscale IP:'\n"
+            - "tailscale ip -4 || true\n"
+            - "echo 'SCL container:'\n"
+            - "docker ps --filter name=IncredibuildHelper\n"
+      Tags:
+        - Key: Name
+          Value: 'ib-scl-helper'
+        - Key: Role
+          Value: 'incredibuild-helper'
+
+Outputs:
+  HelperInstanceId:
+    Description: 'EC2 instance id'
+    Value: !Ref HelperInstance
+  HelperPublicIp:
+    Description: 'Public IP (for reference; IB traffic uses Tailscale)'
+    Value: !GetAtt HelperInstance.PublicIp
+  HelperPrivateIp:
+    Description: 'Private VPC IP'
+    Value: !GetAtt HelperInstance.PrivateIp
+  NextStep:
+    Description: 'Check IncrediBuild Build Monitor -> Agent grid for ib-scl-helper'
+    Value: 'If missing: (1) https://login.tailscale.com/admin/machines shows ib-scl-helper Online, (2) IB version match, (3) SSH: ssh ubuntu@<tailscale-ip> then docker logs IncredibuildHelper'
