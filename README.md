@@ -202,6 +202,8 @@ ib_aws/                  CloudFormation template + user-data to create the SCL h
 |---|---|
 | Helper never appears in the Build Monitor | IB version mismatch is the usual cause: the SCL image tag must equal your installed version exactly. Also check `docker logs IncredibuildHelper` on the EC2 host (`ssh ubuntu@<helper-tailscale-ip>`). |
 | Build runs but everything stays local | The helper is not registered, or `-UseCloudHelpers:$false` was passed. Rerun `start_and_build.bat` and watch step [4/5]. |
+| Build log says `Agent is not registered as initiator` / `Missing License` and runs in Stand Alone mode | Your machine is not assigned an **Initiator** role on the Coordinator. Open IncrediBuild Manager (`https://localhost:8000`), go to **Agents**, select your Windows machine, then **Set Agent Role** and set **Initiator: Fixed** (requires the license to have Fixed Initiator slots). See the gotcha below. |
+| Helper shows `WorkingFor=` empty forever / tasks never dispatch | The license is missing the **SCL Helpers** product feature. Check with `"C:\Program Files (x86)\IncrediBuild\LicenseServiceConsole.exe" Status <CoordinatorId>`: `ProductFeatures` must contain `SCL Helpers` and the helper agent must show `HelperRegType="Floating"`. Without that feature the coordinator never sends tasks to the Linux helper even though it appears online. |
 | `make not found at C:\MinGW\bin\make.exe` | Do Step 1.3. |
 | `aws` not recognized | Install the AWS CLI (Step 3) and open a new terminal. |
 | Tailscale ping to helper fails | Log in to Tailscale on Windows; on the AWS side confirm the machine shows "Online" at login.tailscale.com/admin/machines. |
@@ -215,6 +217,24 @@ ib_aws/                  CloudFormation template + user-data to create the SCL h
   silently never registers.
 - SCL runs the Windows toolchain under Wine; a few Win32 APIs can misbehave
   depending on the image version.
+- Two separate license requirements must hold before remote distribution works:
+  1. The license's **ProductFeatures** must include **SCL Helpers** (this is a
+     separate feature from the Windows grid features; a license without it
+     activates fine and still never dispatches to the Linux helper).
+  2. The Windows initiator machine must be assigned an **Initiator role**
+     (Agents page in IncrediBuild Manager, "Set Agent Role", Initiator: Fixed).
+     Changing/activating a new license can silently reset this assignment, so
+     if a build suddenly says "Agent is not registered as initiator", re-check
+     the role in the Manager. You can verify the assignment with:
+     ```powershell
+     & "C:\Program Files (x86)\IncrediBuild\xgCoordConsole.exe" /LOCAL /EXPORTSTATUS=coord.xml
+     # then look for InitiatorRegType="Fixed" and RegisteredInitiator="True"
+     # on your machine's <Agent> element
+     ```
+- A useful sanity check before building: the coordinator status XML should show
+  the helper agent with `HelperRegType="Floating"` and, once a build starts,
+  `WorkingForAgents="<your machine>"` while the initiator shows
+  `InitiatorRegType="Fixed"`.
 
 ## Cost notes
 
