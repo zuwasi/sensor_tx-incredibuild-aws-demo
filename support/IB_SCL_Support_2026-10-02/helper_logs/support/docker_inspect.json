@@ -1,0 +1,202 @@
+[
+    {
+        "Id": "f7f9174affeaa1ca8e748e238f03571618dacae1b20bcd10f8b567667506afd7",
+        "Created": "2026-10-02T08:36:10.435586735Z",
+        "Path": "sh",
+        "Args": [
+            "-c",
+            "xvfb-run -a ./winemodal.sh wine ib_setup_console.exe /Install /Components=Agent /Agent:AgentRole=Helper /Agent:HelperType=Floating /Agent:SingleUse=True /Agent:InstallAddins=OFF /Agent:OpenFirewall=OFF /Agent:AutoSelectPorts=OFF /Agent:HelperCores=$HELPER_CORES /Agent:ServicePort=${SERVICE_PORT:-$DEFAULT_SERVICE_PORT} /Agent:HelperPort=${HELPER_PORT:-$DEFAULT_HELPER_PORT} /Coordinator=$COORD_IP"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1232,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-02T14:44:01.359584474Z",
+            "FinishedAt": "2026-10-02T08:55:33.427676982Z"
+        },
+        "Image": "sha256:bf4207509351ab628a76aec5f816506e892bc56202b973f19a328d8d731313e5",
+        "ResolvConfPath": "/var/lib/docker/containers/f7f9174affeaa1ca8e748e238f03571618dacae1b20bcd10f8b567667506afd7/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/f7f9174affeaa1ca8e748e238f03571618dacae1b20bcd10f8b567667506afd7/hostname",
+        "HostsPath": "/var/lib/docker/containers/f7f9174affeaa1ca8e748e238f03571618dacae1b20bcd10f8b567667506afd7/hosts",
+        "LogPath": "/var/lib/docker/containers/f7f9174affeaa1ca8e748e238f03571618dacae1b20bcd10f8b567667506afd7/f7f9174affeaa1ca8e748e238f03571618dacae1b20bcd10f8b567667506afd7-json.log",
+        "Name": "/IncredibuildHelper",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "host",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "ib-scl-helper",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "HELPER_CORES=8",
+                "COORD_IP=[COORDINATOR_TS_IP]",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEFAULT_SERVICE_PORT=31105",
+                "DEFAULT_HELPER_PORT=31106"
+            ],
+            "Cmd": [
+                "sh",
+                "-c",
+                "xvfb-run -a ./winemodal.sh wine ib_setup_console.exe /Install /Components=Agent /Agent:AgentRole=Helper /Agent:HelperType=Floating /Agent:SingleUse=True /Agent:InstallAddins=OFF /Agent:OpenFirewall=OFF /Agent:AutoSelectPorts=OFF /Agent:HelperCores=$HELPER_CORES /Agent:ServicePort=${SERVICE_PORT:-$DEFAULT_SERVICE_PORT} /Agent:HelperPort=${HELPER_PORT:-$DEFAULT_HELPER_PORT} /Coordinator=$COORD_IP"
+            ],
+            "Image": "public.ecr.aws/incredibuild/scl:latest_10.38.0",
+            "Volumes": null,
+            "WorkingDir": "/ib-agent",
+            "Entrypoint": null,
+            "Labels": {
+                "org.opencontainers.image.revision": "89d794893f5057ff570b5d445c478b4b8977a362",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "c0c131339e11bd34a906519cb722ce9f1f55ab55e2f86c8b16cb0ff6db4ef96d",
+            "SandboxKey": "/var/run/docker/netns/default",
+            "Ports": {},
+            "Networks": {
+                "host": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "97a43b3a43da5a6fdca9e012fe35f0e960bca837396f55ed594bb3bcdd29a195",
+                    "EndpointID": "8db1f00f66d6e3499380dd9138014915bdd17258695c19c6a31ebfae3c4d5ba0",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:bf4207509351ab628a76aec5f816506e892bc56202b973f19a328d8d731313e5",
+            "size": 3457,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

@@ -1,0 +1,37 @@
+
+HKEY_LOCAL_MACHINE\Software\Wow6432Node\Xoreax\IncrediBuild\Worker
+    EnableScheduler    REG_SZ    0
+    ForcePortNum    REG_SZ    31106
+    MaxPort    REG_SZ    31105
+    MinPort    REG_SZ    31105
+    SchedulerStart    REG_SZ    18:00
+    SchedulerStop    REG_SZ    9:00
+    ScreenSaverDetect2    REG_SZ    0
+    ScreenSaverEnable    REG_SZ    1
+
+===
+
+HKEY_LOCAL_MACHINE\Software\Wow6432Node\Xoreax\IncrediBuild\BuildService
+    AgentDescription    REG_SZ    
+    BackupCoordHost    REG_SZ    
+    BackupCoordPort    REG_SZ    0
+    CoordDashboardURL    REG_SZ    https://[COORDINATOR_TS_IP]:8000
+    CoordHost    REG_SZ    [COORDINATOR_TS_IP]
+    CoordPort    REG_SZ    31104
+    ForcePort    REG_SZ    1
+    ForcePortNum    REG_SZ    31105
+    Group    REG_SZ    _?_Unspecified_?_
+    LogMemoryStatus    REG_SZ    0
+    MachineId1 REG_SZ [REDACTED]
+    MachineId2 REG_SZ [REDACTED]
+    MachineId3 REG_SZ [REDACTED]
+    MaxConcurrentBuilds    REG_SZ    1
+    SingleUseAgent    REG_SZ    1
+    SSLCer    REG_SZ    C:\Program Files (x86)\Incredibuild\Certs\Agent\Agent.crt
+    SSLKey    REG_SZ    C:\Program Files (x86)\Incredibuild\Certs\Agent\Agent.key
+    WatchdogCheckIntervalSec    REG_SZ    10
+    WatchdogMemoryLimitMB    REG_SZ    700
+
+===
+wine-8.0.2
+

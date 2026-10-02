@@ -111,7 +111,6 @@ if ($UseIncrediBuild) {
     # /USECLOUDHELPERS  enables cloud (AWS SCL) helpers in the grid.
     # /SHOWAGENT        prints which Agent executed each distributed task.
     # /LOG              writes the IncrediBuild build log.
-    # /LOGLEVEL         sets logging verbosity (Detailed = level 5, for support).
     # /MON              saves the Build Monitor file (.bmon) for support export.
     # /PROFILE          interception profile defining clang as distributed.
     # /MAXCPUS          overrides the max cores used from the grid.
@@ -119,12 +118,11 @@ if ($UseIncrediBuild) {
     $ibMon = Join-Path $ProjectRoot ('ib_' + $Target + '.bmon')
     $ibProfile = Join-Path $ProjectRoot 'profile.xml'
     $makeCmd = "`"$makeExe`" -f `"$Makefile`" $BuildArgs"
-    $ibArgs = @("/COMMAND=`"$makeCmd`"", "/USECLOUDHELPERS=$UseCloudHelpers", '/SHOWAGENT', "/PROFILE=`"$ibProfile`"", '/LOGLEVEL=Detailed', "/LOG=`"$ibLog`"", "/MON=`"$ibMon`"")
+    $ibArgs = @("/COMMAND=`"$makeCmd`"", "/USECLOUDHELPERS=$UseCloudHelpers", '/SHOWAGENT', "/PROFILE=`"$ibProfile`"", "/LOG=`"$ibLog`"", "/MON=`"$ibMon`"")
     if ($MaxCpus -gt 0) { $ibArgs += "/MAXCPUS=$MaxCpus" }
     # Force enough parallel jobs to overflow local cores to remote helpers
     $ibArgs += '/AVOIDLOCAL=ON'
     Write-Host "==> Profile       : $ibProfile"
-    Write-Host "==> Log level     : Detailed (level 5)"
     Write-Host "==> Build Monitor : $ibMon"
     Write-Host "==> Distributing build through IncrediBuild..."
     cmd /c ("`"$ibConsole`" " + ($ibArgs -join ' ') + " 2>&1") | Tee-Object -FilePath $logFile | Out-Host
