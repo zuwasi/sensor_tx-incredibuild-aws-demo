@@ -1,0 +1,760 @@
+20-07-2026 14:49:26.771 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={042A861F-E7F0-4CF9-8E1A-67712B6E14F7})
+20-07-2026 16:03:54.429 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={57F85878-83E0-4784-9D24-01B8508A8209})
+21-07-2026 11:37:13.631 TBuildSys.ExtractBuildData Enter: {1431E305-B1A7-432C-924C-59824C3CD1A1}
+21-07-2026 11:37:13.636 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+21-07-2026 11:37:13.636 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {1431E305-B1A7-432C-924C-59824C3CD1A1}
+21-07-2026 11:37:13.639 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={1431E305-B1A7-432C-924C-59824C3CD1A1})
+21-07-2026 11:37:13.669 OpenSSL cipher list set to AES256+SHA384
+21-07-2026 11:37:13.669 RegSync to use 3 threads
+21-07-2026 11:37:13.669 FileSync to use 8 threads
+21-07-2026 11:37:13.670 DirSync to use 3 threads
+21-07-2026 11:37:17.342 [3504|25424] TMemoryInfoHelper: helper started, PID 15516
+21-07-2026 11:37:26.899 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+21-07-2026 11:37:27.046 Events source stream size: 0.645323753356934
+Events dest stream size: 0.645323753356934
+21-07-2026 11:37:27.064 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46224\{1431E305-B1A7-432C-924C-59824C3CD1A1}.ib_mon
+21-07-2026 11:37:27.064 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+21-07-2026 11:37:27.064 TBuildSys.ExtractBuildData Exit
+21-07-2026 11:37:27.064 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={1431E305-B1A7-432C-924C-59824C3CD1A1} path=C:\Program Files (x86)\Incredibuild\History\Local\46224\{1431E305-B1A7-432C-924C-59824C3CD1A1}.ib_mon
+21-07-2026 11:37:27.064 Waiting for live data extractor to exit (buildId={1431E305-B1A7-432C-924C-59824C3CD1A1})
+21-07-2026 11:37:27.140 Live data extractor exited with code 0
+21-07-2026 11:37:27.140 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{1431E305-B1A7-432C-924C-59824C3CD1A1}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46224\{1431E305-B1A7-432C-924C-59824C3CD1A1}.ib_mon"
+21-07-2026 11:37:29.284 MetaBuild backstop completed successfully
+21-07-2026 11:37:29.284 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=3504)------------21-07-2026 11:37:29.287----------------
+
+21-07-2026 16:52:27.453 TBuildSys.ExtractBuildData Enter: {E32FA597-B325-46E0-8206-BB974B99FC48}
+21-07-2026 16:52:27.460 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+21-07-2026 16:52:27.460 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {E32FA597-B325-46E0-8206-BB974B99FC48}
+21-07-2026 16:52:27.817 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={E32FA597-B325-46E0-8206-BB974B99FC48})
+21-07-2026 16:52:27.834 OpenSSL cipher list set to AES256+SHA384
+21-07-2026 16:52:27.835 RegSync to use 3 threads
+21-07-2026 16:52:27.835 FileSync to use 8 threads
+21-07-2026 16:52:27.835 DirSync to use 3 threads
+21-07-2026 16:52:30.126 [36776|28080] TMemoryInfoHelper: helper started, PID 28200
+21-07-2026 16:52:44.883 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+21-07-2026 16:52:44.962 Events source stream size: 0.697413444519043
+Events dest stream size: 0.697413444519043
+21-07-2026 16:52:44.982 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46224\{E32FA597-B325-46E0-8206-BB974B99FC48}.ib_mon
+21-07-2026 16:52:44.982 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+21-07-2026 16:52:44.982 TBuildSys.ExtractBuildData Exit
+21-07-2026 16:52:44.982 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={E32FA597-B325-46E0-8206-BB974B99FC48} path=C:\Program Files (x86)\Incredibuild\History\Local\46224\{E32FA597-B325-46E0-8206-BB974B99FC48}.ib_mon
+21-07-2026 16:52:44.982 Waiting for live data extractor to exit (buildId={E32FA597-B325-46E0-8206-BB974B99FC48})
+21-07-2026 16:52:45.026 Live data extractor exited with code 0
+21-07-2026 16:52:45.026 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{E32FA597-B325-46E0-8206-BB974B99FC48}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46224\{E32FA597-B325-46E0-8206-BB974B99FC48}.ib_mon"
+21-07-2026 16:52:47.136 MetaBuild backstop completed successfully
+21-07-2026 16:52:47.136 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=36776)-----------21-07-2026 16:52:47.138----------------
+
+21-07-2026 16:55:15.877 TBuildSys.ExtractBuildData Enter: {7EED73F4-7933-40D4-AD4F-12ED84594134}
+21-07-2026 16:55:15.884 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+21-07-2026 16:55:15.884 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {7EED73F4-7933-40D4-AD4F-12ED84594134}
+21-07-2026 16:55:15.888 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={7EED73F4-7933-40D4-AD4F-12ED84594134})
+21-07-2026 16:55:15.902 OpenSSL cipher list set to AES256+SHA384
+21-07-2026 16:55:15.902 RegSync to use 3 threads
+21-07-2026 16:55:15.903 FileSync to use 8 threads
+21-07-2026 16:55:15.903 DirSync to use 3 threads
+21-07-2026 16:55:17.362 [22088|42736] TMemoryInfoHelper: helper started, PID 48804
+21-07-2026 16:55:32.216 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+21-07-2026 16:55:32.280 Events source stream size: 0.702661514282227
+Events dest stream size: 0.702661514282227
+21-07-2026 16:55:32.293 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46224\{7EED73F4-7933-40D4-AD4F-12ED84594134}.ib_mon
+21-07-2026 16:55:32.293 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+21-07-2026 16:55:32.293 TBuildSys.ExtractBuildData Exit
+21-07-2026 16:55:32.293 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={7EED73F4-7933-40D4-AD4F-12ED84594134} path=C:\Program Files (x86)\Incredibuild\History\Local\46224\{7EED73F4-7933-40D4-AD4F-12ED84594134}.ib_mon
+21-07-2026 16:55:32.293 Waiting for live data extractor to exit (buildId={7EED73F4-7933-40D4-AD4F-12ED84594134})
+21-07-2026 16:55:32.337 Live data extractor exited with code 0
+21-07-2026 16:55:32.338 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{7EED73F4-7933-40D4-AD4F-12ED84594134}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46224\{7EED73F4-7933-40D4-AD4F-12ED84594134}.ib_mon"
+21-07-2026 16:55:34.553 MetaBuild backstop completed successfully
+21-07-2026 16:55:34.553 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=22088)-----------21-07-2026 16:55:34.555----------------
+
+21-07-2026 19:34:15.243 TBuildSys.ExtractBuildData Enter: {D0DB89D7-E39C-49A5-B247-A7D1EFAFE7C2}
+21-07-2026 19:34:15.251 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+21-07-2026 19:34:15.251 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {D0DB89D7-E39C-49A5-B247-A7D1EFAFE7C2}
+21-07-2026 19:34:15.678 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={D0DB89D7-E39C-49A5-B247-A7D1EFAFE7C2})
+21-07-2026 19:34:15.692 OpenSSL cipher list set to AES256+SHA384
+21-07-2026 19:34:15.693 RegSync to use 3 threads
+21-07-2026 19:34:15.693 FileSync to use 8 threads
+21-07-2026 19:34:15.693 DirSync to use 3 threads
+21-07-2026 19:34:17.581 [46844|33708] TMemoryInfoHelper: helper started, PID 46820
+21-07-2026 19:34:31.609 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+21-07-2026 19:34:31.696 Events source stream size: 0.694869995117188
+Events dest stream size: 0.694869995117188
+21-07-2026 19:34:31.711 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46224\{D0DB89D7-E39C-49A5-B247-A7D1EFAFE7C2}.ib_mon
+21-07-2026 19:34:31.711 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+21-07-2026 19:34:31.711 TBuildSys.ExtractBuildData Exit
+21-07-2026 19:34:31.711 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={D0DB89D7-E39C-49A5-B247-A7D1EFAFE7C2} path=C:\Program Files (x86)\Incredibuild\History\Local\46224\{D0DB89D7-E39C-49A5-B247-A7D1EFAFE7C2}.ib_mon
+21-07-2026 19:34:31.711 Waiting for live data extractor to exit (buildId={D0DB89D7-E39C-49A5-B247-A7D1EFAFE7C2})
+21-07-2026 19:34:31.755 Live data extractor exited with code 0
+21-07-2026 19:34:31.755 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{D0DB89D7-E39C-49A5-B247-A7D1EFAFE7C2}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46224\{D0DB89D7-E39C-49A5-B247-A7D1EFAFE7C2}.ib_mon"
+21-07-2026 19:34:34.004 MetaBuild backstop completed successfully
+21-07-2026 19:34:34.004 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=46844)-----------21-07-2026 19:34:34.006----------------
+
+21-07-2026 20:52:04.469 TBuildSys.ExtractBuildData Enter: {4A1A03E8-37FA-4300-884C-19DAA9BEF58B}
+21-07-2026 20:52:04.475 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+21-07-2026 20:52:04.475 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {4A1A03E8-37FA-4300-884C-19DAA9BEF58B}
+21-07-2026 20:52:04.479 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={4A1A03E8-37FA-4300-884C-19DAA9BEF58B})
+21-07-2026 20:52:04.492 OpenSSL cipher list set to AES256+SHA384
+21-07-2026 20:52:04.492 RegSync to use 3 threads
+21-07-2026 20:52:04.492 FileSync to use 8 threads
+21-07-2026 20:52:04.493 DirSync to use 3 threads
+21-07-2026 20:52:05.899 [28316|48256] TMemoryInfoHelper: helper started, PID 20836
+21-07-2026 20:53:27.980 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+21-07-2026 20:53:28.059 Events source stream size: 0.743757247924805
+Events dest stream size: 0.743757247924805
+21-07-2026 20:53:28.081 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46224\{4A1A03E8-37FA-4300-884C-19DAA9BEF58B}.ib_mon
+21-07-2026 20:53:28.081 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+21-07-2026 20:53:28.081 TBuildSys.ExtractBuildData Exit
+21-07-2026 20:53:28.081 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={4A1A03E8-37FA-4300-884C-19DAA9BEF58B} path=C:\Program Files (x86)\Incredibuild\History\Local\46224\{4A1A03E8-37FA-4300-884C-19DAA9BEF58B}.ib_mon
+21-07-2026 20:53:28.081 Waiting for live data extractor to exit (buildId={4A1A03E8-37FA-4300-884C-19DAA9BEF58B})
+21-07-2026 20:53:28.134 Live data extractor exited with code 0
+21-07-2026 20:53:28.134 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{4A1A03E8-37FA-4300-884C-19DAA9BEF58B}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46224\{4A1A03E8-37FA-4300-884C-19DAA9BEF58B}.ib_mon"
+21-07-2026 20:53:30.281 MetaBuild backstop completed successfully
+21-07-2026 20:53:30.281 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=28316)-----------21-07-2026 20:53:30.285----------------
+
+21-07-2026 20:55:02.966 TBuildSys.ExtractBuildData Enter: {0F895D46-70C7-42A5-8A41-F6DFB523C39F}
+21-07-2026 20:55:02.974 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+21-07-2026 20:55:02.974 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {0F895D46-70C7-42A5-8A41-F6DFB523C39F}
+21-07-2026 20:55:02.978 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={0F895D46-70C7-42A5-8A41-F6DFB523C39F})
+21-07-2026 20:55:02.993 OpenSSL cipher list set to AES256+SHA384
+21-07-2026 20:55:02.993 RegSync to use 3 threads
+21-07-2026 20:55:02.993 FileSync to use 8 threads
+21-07-2026 20:55:02.993 DirSync to use 3 threads
+21-07-2026 20:55:04.184 [34772|30144] TMemoryInfoHelper: helper started, PID 34692
+21-07-2026 20:55:19.251 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+21-07-2026 20:55:19.322 Events source stream size: 0.70067024230957
+Events dest stream size: 0.70067024230957
+21-07-2026 20:55:19.341 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46224\{0F895D46-70C7-42A5-8A41-F6DFB523C39F}.ib_mon
+21-07-2026 20:55:19.341 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+21-07-2026 20:55:19.341 TBuildSys.ExtractBuildData Exit
+21-07-2026 20:55:19.341 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={0F895D46-70C7-42A5-8A41-F6DFB523C39F} path=C:\Program Files (x86)\Incredibuild\History\Local\46224\{0F895D46-70C7-42A5-8A41-F6DFB523C39F}.ib_mon
+21-07-2026 20:55:19.341 Waiting for live data extractor to exit (buildId={0F895D46-70C7-42A5-8A41-F6DFB523C39F})
+21-07-2026 20:55:19.431 Live data extractor exited with code 0
+21-07-2026 20:55:19.431 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{0F895D46-70C7-42A5-8A41-F6DFB523C39F}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46224\{0F895D46-70C7-42A5-8A41-F6DFB523C39F}.ib_mon"
+21-07-2026 20:55:21.553 MetaBuild backstop completed successfully
+21-07-2026 20:55:21.553 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=34772)-----------21-07-2026 20:55:21.556----------------
+
+21-07-2026 20:56:15.663 TBuildSys.ExtractBuildData Enter: {460E0AD6-0BA2-4CF6-93CF-1DE6B4255531}
+21-07-2026 20:56:15.670 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+21-07-2026 20:56:15.670 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {460E0AD6-0BA2-4CF6-93CF-1DE6B4255531}
+21-07-2026 20:56:15.674 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={460E0AD6-0BA2-4CF6-93CF-1DE6B4255531})
+21-07-2026 20:56:15.688 OpenSSL cipher list set to AES256+SHA384
+21-07-2026 20:56:15.688 RegSync to use 3 threads
+21-07-2026 20:56:15.689 FileSync to use 8 threads
+21-07-2026 20:56:15.689 DirSync to use 3 threads
+21-07-2026 20:56:17.984 [27140|33276] TMemoryInfoHelper: helper started, PID 38832
+21-07-2026 20:57:30.756 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+21-07-2026 20:57:30.800 Events source stream size: 0.774349212646484
+Events dest stream size: 0.774349212646484
+21-07-2026 20:57:30.822 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46224\{460E0AD6-0BA2-4CF6-93CF-1DE6B4255531}.ib_mon
+21-07-2026 20:57:30.822 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+21-07-2026 20:57:30.822 TBuildSys.ExtractBuildData Exit
+21-07-2026 20:57:30.822 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={460E0AD6-0BA2-4CF6-93CF-1DE6B4255531} path=C:\Program Files (x86)\Incredibuild\History\Local\46224\{460E0AD6-0BA2-4CF6-93CF-1DE6B4255531}.ib_mon
+21-07-2026 20:57:30.822 Waiting for live data extractor to exit (buildId={460E0AD6-0BA2-4CF6-93CF-1DE6B4255531})
+21-07-2026 20:57:30.827 Live data extractor exited with code 0
+21-07-2026 20:57:30.827 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{460E0AD6-0BA2-4CF6-93CF-1DE6B4255531}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46224\{460E0AD6-0BA2-4CF6-93CF-1DE6B4255531}.ib_mon"
+21-07-2026 20:57:32.964 MetaBuild backstop completed successfully
+21-07-2026 20:57:32.964 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Notify Queue Warning----------21-07-2026 20:57:32.968----------------
+
+Shutting down with 1 undelivered notifications in Primary Queue (Normal).
+  TThreadPool
+  TThreadPool
+  TThreadPool
+  
+  
+----------Stopped (PID=27140)-----------21-07-2026 20:57:32.968----------------
+
+21-07-2026 21:21:57.933 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={AAAD5325-29A1-4C0A-9F94-F3B1E3A9B1A9})
+----------Started-----------------------21-07-2026 21:24:28.944----------------
+Build=18415   PID=25020   TID=21920   Computer=[COORDINATOR_HOST]
+
+21-07-2026 21:24:28.958 TBuildSys.ExtractBuildData Enter: {D403FCBE-DC2C-4E8A-9668-A378B2CCDA52}
+21-07-2026 21:24:28.958 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+21-07-2026 21:24:28.959 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {D403FCBE-DC2C-4E8A-9668-A378B2CCDA52}
+21-07-2026 21:24:28.963 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={D403FCBE-DC2C-4E8A-9668-A378B2CCDA52})
+21-07-2026 21:24:28.967 OpenSSL cipher list set to AES256+SHA384
+21-07-2026 21:24:28.967 RegSync to use 3 threads
+21-07-2026 21:24:28.968 FileSync to use 8 threads
+21-07-2026 21:24:28.968 DirSync to use 3 threads
+21-07-2026 21:24:30.396 [25020|21920] TMemoryInfoHelper: helper started, PID 1316
+21-07-2026 21:24:41.898 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+21-07-2026 21:24:41.958 Events source stream size: 0.652294158935547
+Events dest stream size: 0.652294158935547
+21-07-2026 21:24:41.976 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46224\{D403FCBE-DC2C-4E8A-9668-A378B2CCDA52}.ib_mon
+21-07-2026 21:24:41.976 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+21-07-2026 21:24:41.976 TBuildSys.ExtractBuildData Exit
+21-07-2026 21:24:41.976 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={D403FCBE-DC2C-4E8A-9668-A378B2CCDA52} path=C:\Program Files (x86)\Incredibuild\History\Local\46224\{D403FCBE-DC2C-4E8A-9668-A378B2CCDA52}.ib_mon
+21-07-2026 21:24:41.976 Waiting for live data extractor to exit (buildId={D403FCBE-DC2C-4E8A-9668-A378B2CCDA52})
+21-07-2026 21:24:42.034 Live data extractor exited with code 0
+21-07-2026 21:24:42.034 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{D403FCBE-DC2C-4E8A-9668-A378B2CCDA52}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46224\{D403FCBE-DC2C-4E8A-9668-A378B2CCDA52}.ib_mon"
+21-07-2026 21:24:44.266 MetaBuild backstop completed successfully
+21-07-2026 21:24:44.266 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=25020)-----------21-07-2026 21:24:44.270----------------
+
+----------Started-----------------------22-07-2026 04:48:32.861----------------
+Build=18415   PID=36180   TID=46048   Computer=[COORDINATOR_HOST]
+
+22-07-2026 04:48:32.997 TBuildSys.ExtractBuildData Enter: {4592AE25-856F-4527-9C89-34E621E45967}
+22-07-2026 04:48:32.997 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+22-07-2026 04:48:32.997 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {4592AE25-856F-4527-9C89-34E621E45967}
+22-07-2026 04:48:33.748 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={4592AE25-856F-4527-9C89-34E621E45967})
+22-07-2026 04:48:33.776 OpenSSL cipher list set to AES256+SHA384
+22-07-2026 04:48:33.776 RegSync to use 3 threads
+22-07-2026 04:48:33.777 FileSync to use 8 threads
+22-07-2026 04:48:33.777 DirSync to use 3 threads
+22-07-2026 04:48:36.293 [36180|46048] TMemoryInfoHelper: helper started, PID 48188
+22-07-2026 04:48:50.179 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+22-07-2026 04:48:50.380 Events source stream size: 0.711730003356934
+Events dest stream size: 0.711730003356934
+22-07-2026 04:48:50.393 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46225\{4592AE25-856F-4527-9C89-34E621E45967}.ib_mon
+22-07-2026 04:48:50.393 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+22-07-2026 04:48:50.393 TBuildSys.ExtractBuildData Exit
+22-07-2026 04:48:50.393 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={4592AE25-856F-4527-9C89-34E621E45967} path=C:\Program Files (x86)\Incredibuild\History\Local\46225\{4592AE25-856F-4527-9C89-34E621E45967}.ib_mon
+22-07-2026 04:48:50.393 Waiting for live data extractor to exit (buildId={4592AE25-856F-4527-9C89-34E621E45967})
+22-07-2026 04:48:50.498 Live data extractor exited with code 0
+22-07-2026 04:48:50.498 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{4592AE25-856F-4527-9C89-34E621E45967}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46225\{4592AE25-856F-4527-9C89-34E621E45967}.ib_mon"
+22-07-2026 04:48:52.653 MetaBuild backstop completed successfully
+22-07-2026 04:48:52.653 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=36180)-----------22-07-2026 04:48:52.655----------------
+
+----------Started-----------------------01-10-2026 12:18:58.386----------------
+Build=18415   PID=41412   TID=57392   Computer=[COORDINATOR_HOST]
+
+01-10-2026 12:18:58.541 TBuildSys.ExtractBuildData Enter: {25974988-B82B-4500-BB4E-5C924D9107DD}
+01-10-2026 12:18:58.541 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 12:18:58.541 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {25974988-B82B-4500-BB4E-5C924D9107DD}
+01-10-2026 12:18:59.246 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={25974988-B82B-4500-BB4E-5C924D9107DD})
+01-10-2026 12:18:59.294 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 12:18:59.294 RegSync to use 3 threads
+01-10-2026 12:18:59.294 FileSync to use 8 threads
+01-10-2026 12:18:59.294 DirSync to use 3 threads
+----------Build System Warning----------01-10-2026 12:18:59.621----------------
+
+Build System Warning
+
+License has expired:
+    The coordinator's license has expired. Please contact sales@incredibuild.com in order to renew it.
+    This build will run in standalone mode.
+
+01-10-2026 12:20:40.723 [41412|57392] TMemoryInfoHelper: helper started, PID 11832
+01-10-2026 12:20:41.327 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 12:20:41.562 Events source stream size: 0.0585737228393555
+Events dest stream size: 0.0585737228393555
+01-10-2026 12:20:41.580 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{25974988-B82B-4500-BB4E-5C924D9107DD}.ib_mon
+01-10-2026 12:20:41.580 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 12:20:41.580 TBuildSys.ExtractBuildData Exit
+01-10-2026 12:20:41.580 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={25974988-B82B-4500-BB4E-5C924D9107DD} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{25974988-B82B-4500-BB4E-5C924D9107DD}.ib_mon
+01-10-2026 12:20:41.580 Waiting for live data extractor to exit (buildId={25974988-B82B-4500-BB4E-5C924D9107DD})
+01-10-2026 12:20:41.624 Live data extractor exited with code 0
+01-10-2026 12:20:41.624 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{25974988-B82B-4500-BB4E-5C924D9107DD}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{25974988-B82B-4500-BB4E-5C924D9107DD}.ib_mon"
+01-10-2026 12:20:43.768 MetaBuild backstop completed successfully
+01-10-2026 12:20:43.768 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=41412)-----------01-10-2026 12:20:43.769----------------
+
+----------Started-----------------------01-10-2026 13:28:41.752----------------
+Build=18415   PID=52036   TID=23912   Computer=[COORDINATOR_HOST]
+
+01-10-2026 13:28:41.775 TBuildSys.ExtractBuildData Enter: {5C285D7C-2C9E-4B9D-A7AB-3BA3E006508D}
+01-10-2026 13:28:41.775 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 13:28:41.775 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {5C285D7C-2C9E-4B9D-A7AB-3BA3E006508D}
+01-10-2026 13:28:41.780 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={5C285D7C-2C9E-4B9D-A7AB-3BA3E006508D})
+01-10-2026 13:28:41.797 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 13:28:41.797 RegSync to use 3 threads
+01-10-2026 13:28:41.797 FileSync to use 8 threads
+01-10-2026 13:28:41.797 DirSync to use 3 threads
+----------Build System Warning----------01-10-2026 13:28:41.884----------------
+
+Build System Warning
+
+License has expired:
+    The coordinator's license has expired. Please contact sales@incredibuild.com in order to renew it.
+    This build will run in standalone mode.
+
+01-10-2026 13:30:08.704 [52036|23912] TMemoryInfoHelper: helper started, PID 53448
+01-10-2026 13:30:08.862 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 13:30:08.940 Events source stream size: 0.0610456466674805
+Events dest stream size: 0.0610456466674805
+01-10-2026 13:30:08.962 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{5C285D7C-2C9E-4B9D-A7AB-3BA3E006508D}.ib_mon
+01-10-2026 13:30:08.962 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 13:30:08.962 TBuildSys.ExtractBuildData Exit
+01-10-2026 13:30:08.962 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={5C285D7C-2C9E-4B9D-A7AB-3BA3E006508D} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{5C285D7C-2C9E-4B9D-A7AB-3BA3E006508D}.ib_mon
+01-10-2026 13:30:08.962 Waiting for live data extractor to exit (buildId={5C285D7C-2C9E-4B9D-A7AB-3BA3E006508D})
+01-10-2026 13:30:09.050 Live data extractor exited with code 0
+01-10-2026 13:30:09.050 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{5C285D7C-2C9E-4B9D-A7AB-3BA3E006508D}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{5C285D7C-2C9E-4B9D-A7AB-3BA3E006508D}.ib_mon"
+01-10-2026 13:30:11.176 MetaBuild backstop completed successfully
+01-10-2026 13:30:11.176 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=52036)-----------01-10-2026 13:30:11.179----------------
+
+----------Started-----------------------01-10-2026 13:31:54.824----------------
+Build=18415   PID=34080   TID=57276   Computer=[COORDINATOR_HOST]
+
+01-10-2026 13:31:54.843 TBuildSys.ExtractBuildData Enter: {86B86741-A420-433D-BA2E-D3AB43A67605}
+01-10-2026 13:31:54.843 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 13:31:54.843 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {86B86741-A420-433D-BA2E-D3AB43A67605}
+01-10-2026 13:31:54.846 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={86B86741-A420-433D-BA2E-D3AB43A67605})
+01-10-2026 13:31:54.862 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 13:31:54.862 RegSync to use 3 threads
+01-10-2026 13:31:54.862 FileSync to use 8 threads
+01-10-2026 13:31:54.862 DirSync to use 3 threads
+01-10-2026 13:31:56.872 [34080|57276] TMemoryInfoHelper: helper started, PID 34324
+01-10-2026 13:32:12.227 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 13:32:12.358 Events source stream size: 0.716352462768555
+Events dest stream size: 0.716352462768555
+01-10-2026 13:32:12.377 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{86B86741-A420-433D-BA2E-D3AB43A67605}.ib_mon
+01-10-2026 13:32:12.377 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 13:32:12.377 TBuildSys.ExtractBuildData Exit
+01-10-2026 13:32:12.377 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={86B86741-A420-433D-BA2E-D3AB43A67605} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{86B86741-A420-433D-BA2E-D3AB43A67605}.ib_mon
+01-10-2026 13:32:12.377 Waiting for live data extractor to exit (buildId={86B86741-A420-433D-BA2E-D3AB43A67605})
+01-10-2026 13:32:12.425 Live data extractor exited with code 0
+01-10-2026 13:32:12.425 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{86B86741-A420-433D-BA2E-D3AB43A67605}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{86B86741-A420-433D-BA2E-D3AB43A67605}.ib_mon"
+01-10-2026 13:32:14.579 MetaBuild backstop completed successfully
+01-10-2026 13:32:14.579 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=34080)-----------01-10-2026 13:32:14.582----------------
+
+----------Started-----------------------01-10-2026 14:37:13.799----------------
+Build=18415   PID=61048   TID=26652   Computer=[COORDINATOR_HOST]
+
+01-10-2026 14:37:13.819 TBuildSys.ExtractBuildData Enter: {2794C44D-7459-4E59-8578-8E84A81D2E30}
+01-10-2026 14:37:13.819 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 14:37:13.819 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {2794C44D-7459-4E59-8578-8E84A81D2E30}
+01-10-2026 14:37:13.823 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={2794C44D-7459-4E59-8578-8E84A81D2E30})
+01-10-2026 14:37:13.827 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 14:37:13.827 RegSync to use 3 threads
+01-10-2026 14:37:13.827 FileSync to use 8 threads
+01-10-2026 14:37:13.828 DirSync to use 3 threads
+01-10-2026 14:37:16.337 [61048|26652] TMemoryInfoHelper: helper started, PID 61624
+01-10-2026 14:37:31.520 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 14:37:31.600 Events source stream size: 0.663248062133789
+Events dest stream size: 0.663248062133789
+01-10-2026 14:37:31.615 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{2794C44D-7459-4E59-8578-8E84A81D2E30}.ib_mon
+01-10-2026 14:37:31.615 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 14:37:31.615 TBuildSys.ExtractBuildData Exit
+01-10-2026 14:37:31.615 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={2794C44D-7459-4E59-8578-8E84A81D2E30} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{2794C44D-7459-4E59-8578-8E84A81D2E30}.ib_mon
+01-10-2026 14:37:31.615 Waiting for live data extractor to exit (buildId={2794C44D-7459-4E59-8578-8E84A81D2E30})
+01-10-2026 14:37:31.705 Live data extractor exited with code 0
+01-10-2026 14:37:31.705 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{2794C44D-7459-4E59-8578-8E84A81D2E30}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{2794C44D-7459-4E59-8578-8E84A81D2E30}.ib_mon"
+01-10-2026 14:37:33.917 MetaBuild backstop completed successfully
+01-10-2026 14:37:33.917 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=61048)-----------01-10-2026 14:37:33.919----------------
+
+----------Started-----------------------01-10-2026 14:38:02.183----------------
+Build=18415   PID=58424   TID=17756   Computer=[COORDINATOR_HOST]
+
+01-10-2026 14:38:02.206 TBuildSys.ExtractBuildData Enter: {66BE2763-FF3F-4C3C-9D62-9B82E9B41941}
+01-10-2026 14:38:02.206 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 14:38:02.206 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {66BE2763-FF3F-4C3C-9D62-9B82E9B41941}
+01-10-2026 14:38:02.210 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={66BE2763-FF3F-4C3C-9D62-9B82E9B41941})
+01-10-2026 14:38:02.214 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 14:38:02.214 RegSync to use 3 threads
+01-10-2026 14:38:02.214 FileSync to use 8 threads
+01-10-2026 14:38:02.214 DirSync to use 3 threads
+01-10-2026 14:38:05.302 [58424|17756] TMemoryInfoHelper: helper started, PID 32936
+01-10-2026 14:38:21.262 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 14:38:21.350 Events source stream size: 0.672565460205078
+Events dest stream size: 0.672565460205078
+01-10-2026 14:38:21.371 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{66BE2763-FF3F-4C3C-9D62-9B82E9B41941}.ib_mon
+01-10-2026 14:38:21.371 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 14:38:21.371 TBuildSys.ExtractBuildData Exit
+01-10-2026 14:38:21.371 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={66BE2763-FF3F-4C3C-9D62-9B82E9B41941} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{66BE2763-FF3F-4C3C-9D62-9B82E9B41941}.ib_mon
+01-10-2026 14:38:21.371 Waiting for live data extractor to exit (buildId={66BE2763-FF3F-4C3C-9D62-9B82E9B41941})
+01-10-2026 14:38:21.395 Live data extractor exited with code 0
+01-10-2026 14:38:21.395 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{66BE2763-FF3F-4C3C-9D62-9B82E9B41941}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{66BE2763-FF3F-4C3C-9D62-9B82E9B41941}.ib_mon"
+01-10-2026 14:38:23.693 MetaBuild backstop completed successfully
+01-10-2026 14:38:23.693 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=58424)-----------01-10-2026 14:38:23.696----------------
+
+----------Started-----------------------01-10-2026 14:38:45.142----------------
+Build=18415   PID=43896   TID=35884   Computer=[COORDINATOR_HOST]
+
+01-10-2026 14:38:45.163 TBuildSys.ExtractBuildData Enter: {191905A0-653F-426C-AC81-A83D5766DBC6}
+01-10-2026 14:38:45.165 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 14:38:45.165 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {191905A0-653F-426C-AC81-A83D5766DBC6}
+01-10-2026 14:38:45.168 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={191905A0-653F-426C-AC81-A83D5766DBC6})
+01-10-2026 14:38:45.172 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 14:38:45.172 RegSync to use 3 threads
+01-10-2026 14:38:45.172 FileSync to use 8 threads
+01-10-2026 14:38:45.172 DirSync to use 3 threads
+01-10-2026 14:38:47.187 [43896|35884] TMemoryInfoHelper: helper started, PID 26008
+01-10-2026 14:39:03.535 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 14:39:03.624 Events source stream size: 0.67363166809082
+Events dest stream size: 0.67363166809082
+01-10-2026 14:39:03.644 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{191905A0-653F-426C-AC81-A83D5766DBC6}.ib_mon
+01-10-2026 14:39:03.644 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 14:39:03.644 TBuildSys.ExtractBuildData Exit
+01-10-2026 14:39:03.644 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={191905A0-653F-426C-AC81-A83D5766DBC6} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{191905A0-653F-426C-AC81-A83D5766DBC6}.ib_mon
+01-10-2026 14:39:03.644 Waiting for live data extractor to exit (buildId={191905A0-653F-426C-AC81-A83D5766DBC6})
+01-10-2026 14:39:03.749 Live data extractor exited with code 0
+01-10-2026 14:39:03.749 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{191905A0-653F-426C-AC81-A83D5766DBC6}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{191905A0-653F-426C-AC81-A83D5766DBC6}.ib_mon"
+01-10-2026 14:39:05.923 MetaBuild backstop completed successfully
+01-10-2026 14:39:05.923 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=43896)-----------01-10-2026 14:39:05.925----------------
+
+----------Started-----------------------01-10-2026 14:43:24.044----------------
+Build=18415   PID=43912   TID=45584   Computer=[COORDINATOR_HOST]
+
+01-10-2026 14:43:24.066 TBuildSys.ExtractBuildData Enter: {2D9A17F6-6216-4082-BB94-C5725CB5D9BB}
+01-10-2026 14:43:24.066 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 14:43:24.066 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {2D9A17F6-6216-4082-BB94-C5725CB5D9BB}
+01-10-2026 14:43:24.069 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={2D9A17F6-6216-4082-BB94-C5725CB5D9BB})
+01-10-2026 14:43:24.087 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 14:43:24.087 RegSync to use 3 threads
+01-10-2026 14:43:24.087 FileSync to use 8 threads
+01-10-2026 14:43:24.088 DirSync to use 3 threads
+01-10-2026 14:43:24.882 [43912|45584] TMemoryInfoHelper: helper started, PID 6672
+01-10-2026 14:43:24.944 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 14:43:25.031 Events source stream size: 0.0801668167114258
+Events dest stream size: 0.0801668167114258
+01-10-2026 14:43:25.041 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{2D9A17F6-6216-4082-BB94-C5725CB5D9BB}.ib_mon
+01-10-2026 14:43:25.041 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 14:43:25.041 TBuildSys.ExtractBuildData Exit
+01-10-2026 14:43:25.041 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={2D9A17F6-6216-4082-BB94-C5725CB5D9BB} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{2D9A17F6-6216-4082-BB94-C5725CB5D9BB}.ib_mon
+01-10-2026 14:43:25.041 Waiting for live data extractor to exit (buildId={2D9A17F6-6216-4082-BB94-C5725CB5D9BB})
+01-10-2026 14:43:26.172 Live data extractor exited with code 0
+01-10-2026 14:43:26.172 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{2D9A17F6-6216-4082-BB94-C5725CB5D9BB}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{2D9A17F6-6216-4082-BB94-C5725CB5D9BB}.ib_mon"
+01-10-2026 14:43:28.289 MetaBuild backstop completed successfully
+01-10-2026 14:43:28.289 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=43912)-----------01-10-2026 14:43:28.290----------------
+
+----------Started-----------------------01-10-2026 14:43:38.344----------------
+Build=18415   PID=33540   TID=60520   Computer=[COORDINATOR_HOST]
+
+01-10-2026 14:43:38.364 TBuildSys.ExtractBuildData Enter: {51CE2545-209C-46DA-BA3B-A3EEBB720FB0}
+01-10-2026 14:43:38.364 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 14:43:38.364 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {51CE2545-209C-46DA-BA3B-A3EEBB720FB0}
+01-10-2026 14:43:38.367 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={51CE2545-209C-46DA-BA3B-A3EEBB720FB0})
+01-10-2026 14:43:38.406 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 14:43:38.407 RegSync to use 3 threads
+01-10-2026 14:43:38.407 FileSync to use 8 threads
+01-10-2026 14:43:38.408 DirSync to use 3 threads
+01-10-2026 14:43:40.999 [33540|60520] TMemoryInfoHelper: helper started, PID 61276
+01-10-2026 14:43:56.932 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 14:43:57.025 Events source stream size: 0.733940124511719
+Events dest stream size: 0.733940124511719
+01-10-2026 14:43:57.042 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{51CE2545-209C-46DA-BA3B-A3EEBB720FB0}.ib_mon
+01-10-2026 14:43:57.042 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 14:43:57.042 TBuildSys.ExtractBuildData Exit
+01-10-2026 14:43:57.042 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={51CE2545-209C-46DA-BA3B-A3EEBB720FB0} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{51CE2545-209C-46DA-BA3B-A3EEBB720FB0}.ib_mon
+01-10-2026 14:43:57.042 Waiting for live data extractor to exit (buildId={51CE2545-209C-46DA-BA3B-A3EEBB720FB0})
+01-10-2026 14:43:57.133 Live data extractor exited with code 0
+01-10-2026 14:43:57.133 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{51CE2545-209C-46DA-BA3B-A3EEBB720FB0}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{51CE2545-209C-46DA-BA3B-A3EEBB720FB0}.ib_mon"
+01-10-2026 14:43:59.272 MetaBuild backstop completed successfully
+01-10-2026 14:43:59.272 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=33540)-----------01-10-2026 14:43:59.275----------------
+
+----------Started-----------------------01-10-2026 14:55:45.276----------------
+Build=18415   PID=26804   TID=21868   Computer=[COORDINATOR_HOST]
+
+01-10-2026 14:55:45.295 TBuildSys.ExtractBuildData Enter: {66B8F62B-F882-4B6E-BF2F-6B3C35B820AA}
+01-10-2026 14:55:45.295 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 14:55:45.295 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {66B8F62B-F882-4B6E-BF2F-6B3C35B820AA}
+01-10-2026 14:55:45.299 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={66B8F62B-F882-4B6E-BF2F-6B3C35B820AA})
+01-10-2026 14:55:45.303 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 14:55:45.303 RegSync to use 3 threads
+01-10-2026 14:55:45.303 FileSync to use 8 threads
+01-10-2026 14:55:45.303 DirSync to use 3 threads
+01-10-2026 14:55:47.403 [26804|21868] TMemoryInfoHelper: helper started, PID 21864
+01-10-2026 14:56:02.262 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 14:56:02.351 Events source stream size: 0.66279411315918
+Events dest stream size: 0.66279411315918
+01-10-2026 14:56:02.373 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{66B8F62B-F882-4B6E-BF2F-6B3C35B820AA}.ib_mon
+01-10-2026 14:56:02.373 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 14:56:02.373 TBuildSys.ExtractBuildData Exit
+01-10-2026 14:56:02.373 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={66B8F62B-F882-4B6E-BF2F-6B3C35B820AA} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{66B8F62B-F882-4B6E-BF2F-6B3C35B820AA}.ib_mon
+01-10-2026 14:56:02.373 Waiting for live data extractor to exit (buildId={66B8F62B-F882-4B6E-BF2F-6B3C35B820AA})
+01-10-2026 14:56:02.477 Live data extractor exited with code 0
+01-10-2026 14:56:02.477 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{66B8F62B-F882-4B6E-BF2F-6B3C35B820AA}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{66B8F62B-F882-4B6E-BF2F-6B3C35B820AA}.ib_mon"
+01-10-2026 14:56:04.639 MetaBuild backstop completed successfully
+01-10-2026 14:56:04.639 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=26804)-----------01-10-2026 14:56:04.641----------------
+
+----------Started-----------------------01-10-2026 15:02:12.628----------------
+Build=18415   PID=58960   TID=59040   Computer=[COORDINATOR_HOST]
+
+01-10-2026 15:02:12.650 TBuildSys.ExtractBuildData Enter: {DC6E3894-3852-478A-9157-672E6E8F1862}
+01-10-2026 15:02:12.650 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 15:02:12.650 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {DC6E3894-3852-478A-9157-672E6E8F1862}
+01-10-2026 15:02:12.655 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={DC6E3894-3852-478A-9157-672E6E8F1862})
+01-10-2026 15:02:12.673 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 15:02:12.673 RegSync to use 3 threads
+01-10-2026 15:02:12.673 FileSync to use 8 threads
+01-10-2026 15:02:12.674 DirSync to use 3 threads
+01-10-2026 15:02:15.187 [58960|59040] TMemoryInfoHelper: helper started, PID 38332
+01-10-2026 15:02:30.061 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 15:02:30.182 Events source stream size: 0.727094650268555
+Events dest stream size: 0.727094650268555
+01-10-2026 15:02:30.197 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{DC6E3894-3852-478A-9157-672E6E8F1862}.ib_mon
+01-10-2026 15:02:30.197 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 15:02:30.197 TBuildSys.ExtractBuildData Exit
+01-10-2026 15:02:30.197 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={DC6E3894-3852-478A-9157-672E6E8F1862} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{DC6E3894-3852-478A-9157-672E6E8F1862}.ib_mon
+01-10-2026 15:02:30.197 Waiting for live data extractor to exit (buildId={DC6E3894-3852-478A-9157-672E6E8F1862})
+01-10-2026 15:02:30.226 Live data extractor exited with code 0
+01-10-2026 15:02:30.226 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{DC6E3894-3852-478A-9157-672E6E8F1862}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{DC6E3894-3852-478A-9157-672E6E8F1862}.ib_mon"
+01-10-2026 15:02:32.388 MetaBuild backstop completed successfully
+01-10-2026 15:02:32.388 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=58960)-----------01-10-2026 15:02:32.390----------------
+
+----------Started-----------------------01-10-2026 15:04:26.782----------------
+Build=18415   PID=10100   TID=60004   Computer=[COORDINATOR_HOST]
+
+01-10-2026 15:04:26.805 TBuildSys.ExtractBuildData Enter: {1F682B06-82B8-4679-AC40-548ED1359E44}
+01-10-2026 15:04:26.805 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 15:04:26.805 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {1F682B06-82B8-4679-AC40-548ED1359E44}
+01-10-2026 15:04:26.810 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={1F682B06-82B8-4679-AC40-548ED1359E44})
+01-10-2026 15:04:26.814 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 15:04:26.814 RegSync to use 3 threads
+01-10-2026 15:04:26.814 FileSync to use 8 threads
+01-10-2026 15:04:26.814 DirSync to use 3 threads
+01-10-2026 15:04:29.368 [10100|60004] TMemoryInfoHelper: helper started, PID 23996
+01-10-2026 15:04:44.927 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 15:04:45.026 Events source stream size: 0.66126537322998
+Events dest stream size: 0.66126537322998
+01-10-2026 15:04:45.044 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{1F682B06-82B8-4679-AC40-548ED1359E44}.ib_mon
+01-10-2026 15:04:45.044 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 15:04:45.044 TBuildSys.ExtractBuildData Exit
+01-10-2026 15:04:45.044 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={1F682B06-82B8-4679-AC40-548ED1359E44} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{1F682B06-82B8-4679-AC40-548ED1359E44}.ib_mon
+01-10-2026 15:04:45.044 Waiting for live data extractor to exit (buildId={1F682B06-82B8-4679-AC40-548ED1359E44})
+01-10-2026 15:04:45.072 Live data extractor exited with code 0
+01-10-2026 15:04:45.072 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{1F682B06-82B8-4679-AC40-548ED1359E44}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{1F682B06-82B8-4679-AC40-548ED1359E44}.ib_mon"
+01-10-2026 15:04:47.259 MetaBuild backstop completed successfully
+01-10-2026 15:04:47.259 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=10100)-----------01-10-2026 15:04:47.262----------------
+
+----------Started-----------------------01-10-2026 15:05:55.507----------------
+Build=18415   PID=31620   TID=2532   Computer=[COORDINATOR_HOST]
+
+01-10-2026 15:05:55.533 TBuildSys.ExtractBuildData Enter: {3330A46B-4B37-4CF1-A5B9-1835FE95038D}
+01-10-2026 15:05:55.534 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 15:05:55.534 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {3330A46B-4B37-4CF1-A5B9-1835FE95038D}
+01-10-2026 15:05:55.538 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={3330A46B-4B37-4CF1-A5B9-1835FE95038D})
+01-10-2026 15:05:55.560 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 15:05:55.560 RegSync to use 3 threads
+01-10-2026 15:05:55.560 FileSync to use 8 threads
+01-10-2026 15:05:55.561 DirSync to use 3 threads
+01-10-2026 15:05:58.059 [31620|2532] TMemoryInfoHelper: helper started, PID 3652
+01-10-2026 15:06:14.625 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 15:06:14.740 Events source stream size: 0.732407569885254
+Events dest stream size: 0.732407569885254
+01-10-2026 15:06:14.757 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{3330A46B-4B37-4CF1-A5B9-1835FE95038D}.ib_mon
+01-10-2026 15:06:14.757 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 15:06:14.757 TBuildSys.ExtractBuildData Exit
+01-10-2026 15:06:14.757 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={3330A46B-4B37-4CF1-A5B9-1835FE95038D} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{3330A46B-4B37-4CF1-A5B9-1835FE95038D}.ib_mon
+01-10-2026 15:06:14.757 Waiting for live data extractor to exit (buildId={3330A46B-4B37-4CF1-A5B9-1835FE95038D})
+01-10-2026 15:06:14.800 Live data extractor exited with code 0
+01-10-2026 15:06:14.800 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{3330A46B-4B37-4CF1-A5B9-1835FE95038D}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{3330A46B-4B37-4CF1-A5B9-1835FE95038D}.ib_mon"
+01-10-2026 15:06:16.979 MetaBuild backstop completed successfully
+01-10-2026 15:06:16.979 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=31620)-----------01-10-2026 15:06:16.981----------------
+
+----------Started-----------------------01-10-2026 15:08:51.573----------------
+Build=18415   PID=58564   TID=53648   Computer=[COORDINATOR_HOST]
+
+01-10-2026 15:08:51.595 TBuildSys.ExtractBuildData Enter: {05B377A4-15EA-482D-BDE3-8E986EDBDCDB}
+01-10-2026 15:08:51.595 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 15:08:51.595 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {05B377A4-15EA-482D-BDE3-8E986EDBDCDB}
+01-10-2026 15:08:51.598 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={05B377A4-15EA-482D-BDE3-8E986EDBDCDB})
+01-10-2026 15:08:51.602 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 15:08:51.603 RegSync to use 3 threads
+01-10-2026 15:08:51.603 FileSync to use 8 threads
+01-10-2026 15:08:51.603 DirSync to use 3 threads
+01-10-2026 15:08:53.408 [58564|53648] TMemoryInfoHelper: helper started, PID 53652
+01-10-2026 15:09:08.715 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 15:09:08.805 Events source stream size: 0.669314384460449
+Events dest stream size: 0.669314384460449
+01-10-2026 15:09:08.820 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{05B377A4-15EA-482D-BDE3-8E986EDBDCDB}.ib_mon
+01-10-2026 15:09:08.820 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 15:09:08.820 TBuildSys.ExtractBuildData Exit
+01-10-2026 15:09:08.820 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={05B377A4-15EA-482D-BDE3-8E986EDBDCDB} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{05B377A4-15EA-482D-BDE3-8E986EDBDCDB}.ib_mon
+01-10-2026 15:09:08.820 Waiting for live data extractor to exit (buildId={05B377A4-15EA-482D-BDE3-8E986EDBDCDB})
+01-10-2026 15:09:08.863 Live data extractor exited with code 0
+01-10-2026 15:09:08.863 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{05B377A4-15EA-482D-BDE3-8E986EDBDCDB}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{05B377A4-15EA-482D-BDE3-8E986EDBDCDB}.ib_mon"
+01-10-2026 15:09:11.019 MetaBuild backstop completed successfully
+01-10-2026 15:09:11.019 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=58564)-----------01-10-2026 15:09:11.021----------------
+
+----------Started-----------------------01-10-2026 15:09:56.102----------------
+Build=18415   PID=18756   TID=21660   Computer=[COORDINATOR_HOST]
+
+01-10-2026 15:09:56.124 TBuildSys.ExtractBuildData Enter: {FD12A844-52CF-4ACF-B593-445258B8361E}
+01-10-2026 15:09:56.124 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+01-10-2026 15:09:56.124 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {FD12A844-52CF-4ACF-B593-445258B8361E}
+01-10-2026 15:09:56.127 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={FD12A844-52CF-4ACF-B593-445258B8361E})
+01-10-2026 15:09:56.131 OpenSSL cipher list set to AES256+SHA384
+01-10-2026 15:09:56.131 RegSync to use 3 threads
+01-10-2026 15:09:56.132 FileSync to use 8 threads
+01-10-2026 15:09:56.132 DirSync to use 3 threads
+01-10-2026 15:09:58.444 [18756|21660] TMemoryInfoHelper: helper started, PID 63884
+01-10-2026 15:10:13.155 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+01-10-2026 15:10:13.254 Events source stream size: 0.670211791992188
+Events dest stream size: 0.670211791992188
+01-10-2026 15:10:13.268 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46296\{FD12A844-52CF-4ACF-B593-445258B8361E}.ib_mon
+01-10-2026 15:10:13.269 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+01-10-2026 15:10:13.269 TBuildSys.ExtractBuildData Exit
+01-10-2026 15:10:13.269 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={FD12A844-52CF-4ACF-B593-445258B8361E} path=C:\Program Files (x86)\Incredibuild\History\Local\46296\{FD12A844-52CF-4ACF-B593-445258B8361E}.ib_mon
+01-10-2026 15:10:13.269 Waiting for live data extractor to exit (buildId={FD12A844-52CF-4ACF-B593-445258B8361E})
+01-10-2026 15:10:13.297 Live data extractor exited with code 0
+01-10-2026 15:10:13.297 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{FD12A844-52CF-4ACF-B593-445258B8361E}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46296\{FD12A844-52CF-4ACF-B593-445258B8361E}.ib_mon"
+01-10-2026 15:10:15.449 MetaBuild backstop completed successfully
+01-10-2026 15:10:15.449 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=18756)-----------01-10-2026 15:10:15.452----------------
+
+----------Started-----------------------02-10-2026 09:53:01.436----------------
+Build=18415   PID=33168   TID=59564   Computer=[COORDINATOR_HOST]
+
+02-10-2026 09:53:01.543 TBuildSys.ExtractBuildData Enter: {CC5C5AF2-821D-4A9D-8F2F-30A954BD0D34}
+02-10-2026 09:53:01.543 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+02-10-2026 09:53:01.543 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {CC5C5AF2-821D-4A9D-8F2F-30A954BD0D34}
+02-10-2026 09:53:01.546 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={CC5C5AF2-821D-4A9D-8F2F-30A954BD0D34})
+02-10-2026 09:53:01.549 OpenSSL cipher list set to AES256+SHA384
+02-10-2026 09:53:01.549 RegSync to use 3 threads
+02-10-2026 09:53:01.549 FileSync to use 8 threads
+02-10-2026 09:53:01.549 DirSync to use 3 threads
+02-10-2026 09:53:07.947 [33168|59564] TMemoryInfoHelper: helper started, PID 45464
+02-10-2026 09:53:22.597 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+02-10-2026 09:53:22.720 Events source stream size: 0.660735130310059
+Events dest stream size: 0.660735130310059
+02-10-2026 09:53:22.736 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46297\{CC5C5AF2-821D-4A9D-8F2F-30A954BD0D34}.ib_mon
+02-10-2026 09:53:22.736 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+02-10-2026 09:53:22.736 TBuildSys.ExtractBuildData Exit
+02-10-2026 09:53:22.736 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={CC5C5AF2-821D-4A9D-8F2F-30A954BD0D34} path=C:\Program Files (x86)\Incredibuild\History\Local\46297\{CC5C5AF2-821D-4A9D-8F2F-30A954BD0D34}.ib_mon
+02-10-2026 09:53:22.736 Waiting for live data extractor to exit (buildId={CC5C5AF2-821D-4A9D-8F2F-30A954BD0D34})
+02-10-2026 09:53:22.763 Live data extractor exited with code 0
+02-10-2026 09:53:22.763 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{CC5C5AF2-821D-4A9D-8F2F-30A954BD0D34}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46297\{CC5C5AF2-821D-4A9D-8F2F-30A954BD0D34}.ib_mon"
+02-10-2026 09:53:24.909 MetaBuild backstop completed successfully
+02-10-2026 09:53:24.909 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=33168)-----------02-10-2026 09:53:24.911----------------
+
+----------Started-----------------------02-10-2026 10:05:13.939----------------
+Build=18415   PID=57136   TID=57520   Computer=[COORDINATOR_HOST]
+
+02-10-2026 10:05:13.956 TBuildSys.ExtractBuildData Enter: {B528FAB7-A983-49D4-BFF4-63CA96007957}
+02-10-2026 10:05:13.956 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+02-10-2026 10:05:13.956 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {B528FAB7-A983-49D4-BFF4-63CA96007957}
+02-10-2026 10:05:13.960 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={B528FAB7-A983-49D4-BFF4-63CA96007957})
+02-10-2026 10:05:13.965 OpenSSL cipher list set to AES256+SHA384
+02-10-2026 10:05:13.965 RegSync to use 3 threads
+02-10-2026 10:05:13.965 FileSync to use 8 threads
+02-10-2026 10:05:13.965 DirSync to use 3 threads
+02-10-2026 10:05:16.607 [57136|57520] TMemoryInfoHelper: helper started, PID 4848
+02-10-2026 10:05:34.151 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+02-10-2026 10:05:34.243 Events source stream size: 0.673284530639648
+Events dest stream size: 0.673284530639648
+02-10-2026 10:05:34.257 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46297\{B528FAB7-A983-49D4-BFF4-63CA96007957}.ib_mon
+02-10-2026 10:05:34.257 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+02-10-2026 10:05:34.258 TBuildSys.ExtractBuildData Exit
+02-10-2026 10:05:34.258 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={B528FAB7-A983-49D4-BFF4-63CA96007957} path=C:\Program Files (x86)\Incredibuild\History\Local\46297\{B528FAB7-A983-49D4-BFF4-63CA96007957}.ib_mon
+02-10-2026 10:05:34.258 Waiting for live data extractor to exit (buildId={B528FAB7-A983-49D4-BFF4-63CA96007957})
+02-10-2026 10:05:34.337 Live data extractor exited with code 0
+02-10-2026 10:05:34.337 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{B528FAB7-A983-49D4-BFF4-63CA96007957}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46297\{B528FAB7-A983-49D4-BFF4-63CA96007957}.ib_mon"
+02-10-2026 10:05:36.496 MetaBuild backstop completed successfully
+02-10-2026 10:05:36.496 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=57136)-----------02-10-2026 10:05:36.498----------------
+
+----------Started-----------------------02-10-2026 10:08:12.571----------------
+Build=18415   PID=63428   TID=62688   Computer=[COORDINATOR_HOST]
+
+02-10-2026 10:08:12.584 TBuildSys.ExtractBuildData Enter: {5BA3C102-E569-4A29-81B6-850ACDBA267D}
+02-10-2026 10:08:12.584 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+02-10-2026 10:08:12.584 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {5BA3C102-E569-4A29-81B6-850ACDBA267D}
+02-10-2026 10:08:12.587 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={5BA3C102-E569-4A29-81B6-850ACDBA267D})
+02-10-2026 10:08:12.606 OpenSSL cipher list set to AES256+SHA384
+02-10-2026 10:08:12.606 RegSync to use 3 threads
+02-10-2026 10:08:12.606 FileSync to use 8 threads
+02-10-2026 10:08:12.606 DirSync to use 3 threads
+02-10-2026 10:08:14.353 [63428|62688] TMemoryInfoHelper: helper started, PID 50476
+02-10-2026 10:08:29.399 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+02-10-2026 10:08:29.492 Events source stream size: 0.73102855682373
+Events dest stream size: 0.73102855682373
+02-10-2026 10:08:29.511 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46297\{5BA3C102-E569-4A29-81B6-850ACDBA267D}.ib_mon
+02-10-2026 10:08:29.511 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+02-10-2026 10:08:29.511 TBuildSys.ExtractBuildData Exit
+02-10-2026 10:08:29.511 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={5BA3C102-E569-4A29-81B6-850ACDBA267D} path=C:\Program Files (x86)\Incredibuild\History\Local\46297\{5BA3C102-E569-4A29-81B6-850ACDBA267D}.ib_mon
+02-10-2026 10:08:29.511 Waiting for live data extractor to exit (buildId={5BA3C102-E569-4A29-81B6-850ACDBA267D})
+02-10-2026 10:08:29.535 Live data extractor exited with code 0
+02-10-2026 10:08:29.535 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{5BA3C102-E569-4A29-81B6-850ACDBA267D}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46297\{5BA3C102-E569-4A29-81B6-850ACDBA267D}.ib_mon"
+02-10-2026 10:08:31.698 MetaBuild backstop completed successfully
+02-10-2026 10:08:31.698 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=63428)-----------02-10-2026 10:08:31.699----------------
+
+----------Started-----------------------02-10-2026 10:28:29.475----------------
+Build=18415   PID=40316   TID=39448   Computer=[COORDINATOR_HOST]
+
+02-10-2026 10:28:29.495 TBuildSys.ExtractBuildData Enter: {23DA6E69-C59E-4A6D-959C-4494B6BC8EF0}
+02-10-2026 10:28:29.495 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+02-10-2026 10:28:29.495 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {23DA6E69-C59E-4A6D-959C-4494B6BC8EF0}
+02-10-2026 10:28:29.498 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={23DA6E69-C59E-4A6D-959C-4494B6BC8EF0})
+02-10-2026 10:28:29.504 OpenSSL cipher list set to AES256+SHA384
+02-10-2026 10:28:29.504 RegSync to use 3 threads
+02-10-2026 10:28:29.504 FileSync to use 8 threads
+02-10-2026 10:28:29.504 DirSync to use 3 threads
+02-10-2026 10:28:31.995 [40316|39448] TMemoryInfoHelper: helper started, PID 55000
+02-10-2026 10:28:48.269 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+02-10-2026 10:28:48.369 Events source stream size: 0.664510726928711
+Events dest stream size: 0.664510726928711
+02-10-2026 10:28:48.384 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46297\{23DA6E69-C59E-4A6D-959C-4494B6BC8EF0}.ib_mon
+02-10-2026 10:28:48.384 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+02-10-2026 10:28:48.384 TBuildSys.ExtractBuildData Exit
+02-10-2026 10:28:48.384 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={23DA6E69-C59E-4A6D-959C-4494B6BC8EF0} path=C:\Program Files (x86)\Incredibuild\History\Local\46297\{23DA6E69-C59E-4A6D-959C-4494B6BC8EF0}.ib_mon
+02-10-2026 10:28:48.384 Waiting for live data extractor to exit (buildId={23DA6E69-C59E-4A6D-959C-4494B6BC8EF0})
+02-10-2026 10:28:48.458 Live data extractor exited with code 0
+02-10-2026 10:28:48.458 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{23DA6E69-C59E-4A6D-959C-4494B6BC8EF0}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46297\{23DA6E69-C59E-4A6D-959C-4494B6BC8EF0}.ib_mon"
+02-10-2026 10:28:50.634 MetaBuild backstop completed successfully
+02-10-2026 10:28:50.634 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=40316)-----------02-10-2026 10:28:50.635----------------
+
+----------Started-----------------------02-10-2026 11:12:32.998----------------
+Build=18415   PID=16464   TID=35032   Computer=[COORDINATOR_HOST]
+
+02-10-2026 11:12:33.020 TBuildSys.ExtractBuildData Enter: {D064124B-561E-4063-8B89-2747881C094C}
+02-10-2026 11:12:33.020 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+02-10-2026 11:12:33.020 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {D064124B-561E-4063-8B89-2747881C094C}
+02-10-2026 11:12:33.024 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={D064124B-561E-4063-8B89-2747881C094C})
+02-10-2026 11:12:33.027 OpenSSL cipher list set to AES256+SHA384
+02-10-2026 11:12:33.027 RegSync to use 3 threads
+02-10-2026 11:12:33.027 FileSync to use 8 threads
+02-10-2026 11:12:33.027 DirSync to use 3 threads
+02-10-2026 11:12:35.289 [16464|35032] TMemoryInfoHelper: helper started, PID 42968
+02-10-2026 11:12:48.274 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+02-10-2026 11:12:48.362 Events source stream size: 0.656784057617188
+Events dest stream size: 0.656784057617188
+02-10-2026 11:12:48.375 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46297\{D064124B-561E-4063-8B89-2747881C094C}.ib_mon
+02-10-2026 11:12:48.375 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+02-10-2026 11:12:48.375 TBuildSys.ExtractBuildData Exit
+02-10-2026 11:12:48.375 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={D064124B-561E-4063-8B89-2747881C094C} path=C:\Program Files (x86)\Incredibuild\History\Local\46297\{D064124B-561E-4063-8B89-2747881C094C}.ib_mon
+02-10-2026 11:12:48.375 Waiting for live data extractor to exit (buildId={D064124B-561E-4063-8B89-2747881C094C})
+02-10-2026 11:12:48.389 Live data extractor exited with code 0
+02-10-2026 11:12:48.389 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{D064124B-561E-4063-8B89-2747881C094C}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46297\{D064124B-561E-4063-8B89-2747881C094C}.ib_mon"
+02-10-2026 11:12:50.563 MetaBuild backstop completed successfully
+02-10-2026 11:12:50.563 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=16464)-----------02-10-2026 11:12:50.565----------------
+
+----------Started-----------------------02-10-2026 11:53:14.330----------------
+Build=18415   PID=2584   TID=46328   Computer=[COORDINATOR_HOST]
+
+02-10-2026 11:53:14.429 TBuildSys.ExtractBuildData Enter: {DC7469E3-71EB-42A0-ACBE-8104D43F7D6A}
+02-10-2026 11:53:14.429 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 1
+02-10-2026 11:53:14.429 Launching data extractor: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --id {DC7469E3-71EB-42A0-ACBE-8104D43F7D6A}
+02-10-2026 11:53:14.653 TBuildSys.ExtractBuildData failed with code -1 (mode=1 path={DC7469E3-71EB-42A0-ACBE-8104D43F7D6A})
+02-10-2026 11:53:14.656 OpenSSL cipher list set to AES256+SHA384
+02-10-2026 11:53:14.656 RegSync to use 3 threads
+02-10-2026 11:53:14.656 FileSync to use 8 threads
+02-10-2026 11:53:14.657 DirSync to use 3 threads
+02-10-2026 11:53:21.211 [2584|46328] TMemoryInfoHelper: helper started, PID 62276
+02-10-2026 11:53:37.505 -= BuildSystem's Exit code = 0 (EXIT_SUCCESS)
+02-10-2026 11:53:37.723 Events source stream size: 0.66776180267334
+Events dest stream size: 0.66776180267334
+02-10-2026 11:53:37.738 TBuildSys.ExtractBuildData Enter: C:\Program Files (x86)\Incredibuild\History\Local\46297\{DC7469E3-71EB-42A0-ACBE-8104D43F7D6A}.ib_mon
+02-10-2026 11:53:37.738 TBuildSys.ExtractBuildData Configured ExtractorMode = 1, Requested ExtractorMode = 2
+02-10-2026 11:53:37.738 TBuildSys.ExtractBuildData Exit
+02-10-2026 11:53:37.738 TBuildSys.ExtractMetaBuildBackstop Enter: buildId={DC7469E3-71EB-42A0-ACBE-8104D43F7D6A} path=C:\Program Files (x86)\Incredibuild\History\Local\46297\{DC7469E3-71EB-42A0-ACBE-8104D43F7D6A}.ib_mon
+02-10-2026 11:53:37.738 Waiting for live data extractor to exit (buildId={DC7469E3-71EB-42A0-ACBE-8104D43F7D6A})
+02-10-2026 11:53:37.767 Live data extractor exited with code 0
+02-10-2026 11:53:37.767 Launching MetaBuild backstop: "C:\Program Files (x86)\Incredibuild\BuildDataExtractor.exe" --meta-build-only --id "{DC7469E3-71EB-42A0-ACBE-8104D43F7D6A}" --source "C:\Program Files (x86)\Incredibuild\History\Local\46297\{DC7469E3-71EB-42A0-ACBE-8104D43F7D6A}.ib_mon"
+02-10-2026 11:53:39.923 MetaBuild backstop completed successfully
+02-10-2026 11:53:39.923 TBuildSys.ExtractMetaBuildBackstop Exit
+----------Stopped (PID=2584)------------02-10-2026 11:53:39.925----------------
+

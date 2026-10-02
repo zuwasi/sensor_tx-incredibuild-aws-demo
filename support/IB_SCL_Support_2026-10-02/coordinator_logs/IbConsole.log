@@ -1,0 +1,172 @@
+FATAL ERROR: Failed to initialize session: Failed to open/create session data
+Failed to open/create session data: STATUS_ACCESS_DENIED
+FATAL ERROR: Failed to initialize session: Failed to open/create session data
+Failed to open/create session data: STATUS_ACCESS_DENIED
+----------Raised Exception--------------21-07-2026 11:37:13.944----------------
+EInOutError PID=47612 TID=2400 [Main Thread] Build=18415
+
+I/O error 232
+
+($CALLTRACE:004DFA48:861723*3,3C73D6,41A,861723,8AB3,47E3E,8663,518B04,7246,6AA7,86F1B9,7EB69,750E5D47,6F0E009,DF8C)
+
+
+----------Exception---------------------21-07-2026 11:37:13.951----------------
+EInOutError   Code=0x0EEDFADE   Flags=0x1   Addr=0x75529F54   PID=47612   TID=2400 [Main Thread]   Build=18415
+
+I/O error 232
+
+($CALLTRACE:004DFA48:75529F54,00861723*4,3C73D6,41A,861723,8AB3,47E3E,8663,518B04,7246,6AA7,86F1B9,7EB69,750E5D47,6F0E009,DF8C)
+
+----------Exception---------------------21-07-2026 11:37:29.298----------------
+EInOutError   Code=0x0EEDFADE   Flags=0x1   Addr=0x75529F54   PID=47612   TID=2400 [Main Thread]   Build=18415
+
+I/O error 232
+
+($CALLTRACE:004DFA48:75529F54,00861723*4,3C73D6,41A,861723,8AB3,47E3E,8663,518B04,7246,6AA7,86F1B9,7EB69,750E5D47,6F0E009,DF8C)
+
+==========Warning=======================21-07-2026 11:37:29.298================
+Failed to notify timer
+I/O error 232
+
+----------Raised Exception--------------21-07-2026 16:52:28.058----------------
+EInOutError PID=15172 TID=6440 [Main Thread] Build=18415
+
+I/O error 232
+
+($CALLTRACE:0012FA48:4B1723*3,0173D6,41A,4B1723,8AB3,97E3E,8663,168B04,7246,6AA7,4BF1B9,CEB69,750E5D47,6F0E009,DF8C)
+
+
+----------Exception---------------------21-07-2026 16:52:28.064----------------
+EInOutError   Code=0x0EEDFADE   Flags=0x1   Addr=0x75529F54   PID=15172   TID=6440 [Main Thread]   Build=18415
+
+I/O error 232
+
+($CALLTRACE:0012FA48:75529F54,004B1723*4,0173D6,41A,4B1723,8AB3,97E3E,8663,168B04,7246,6AA7,4BF1B9,CEB69,750E5D47,6F0E009,DF8C)
+
+----------Exception---------------------21-07-2026 16:52:47.151----------------
+EInOutError   Code=0x0EEDFADE   Flags=0x1   Addr=0x75529F54   PID=15172   TID=6440 [Main Thread]   Build=18415
+
+I/O error 232
+
+($CALLTRACE:0012FA48:75529F54,004B1723*4,0173D6,41A,4B1723,8AB3,97E3E,8663,168B04,7246,6AA7,4BF1B9,CEB69,750E5D47,6F0E009,DF8C)
+
+==========Warning=======================21-07-2026 16:52:47.151================
+Failed to notify timer
+I/O error 232
+
+----------Started-----------------------21-07-2026 21:21:58.159----------------
+Build=18415   PID=14688   TID=8128   Computer=[COORDINATOR_HOST]
+
+----------Raised Exception--------------21-07-2026 21:21:58.176----------------
+EFCreateError PID=14688 TID=8128 [Main Thread] Build=18415
+
+Cannot create file: C:\Users\danie\eclipse-workspace\sensor_tx\ib_benchmark.log
+
+($CALLTRACE:00A5FA48:AA320D,2AC7,DEB9DE,F1AF,FEB69,750E5D47,6F0E009,DF8C)
+
+
+----------Exception---------------------21-07-2026 21:21:58.176----------------
+EFCreateError   Code=0x0EEDFADE   Flags=0x1   Addr=0x75529F54   PID=14688   TID=8128 [Main Thread]   Build=18415
+
+Cannot create file: C:\Users\danie\eclipse-workspace\sensor_tx\ib_benchmark.log
+
+($CALLTRACE:00A5FA48:75529F54,00AA320D*2,2AC7,DEB9DE,F1AF,FEB69,750E5D47,6F0E009,DF8C)
+
+----------Raised Exception--------------21-07-2026 21:21:58.177----------------
+EOSError PID=14688 TID=8128 [Main Thread] Build=18415
+
+Cannot create file: C:\Users\danie\eclipse-workspace\sensor_tx\ib_benchmark.log: The process cannot access the file because it is being used by another process (32)
+
+($CALLTRACE:00A5FA48:AADC75,AD,3281,0D,76F551C0,8F,0F4FE,EF2D45,3197,F1BD8A,5529F4E,00AA320D*3,75529F4E*2,6F199DA,551D6E2,700,6F19C2A,5529F4E,00AA320D*5,2AC7,DEB9DE,F1AF,FEB69,750E5D47,6F0E009,DF8C)
+
+
+----------Exception---------------------21-07-2026 21:21:58.178----------------
+EOSError   Code=0x0EEDFADE   Flags=0x1   Addr=0x75529F54   PID=14688   TID=8128 [Main Thread]   Build=18415
+
+Cannot create file: C:\Users\danie\eclipse-workspace\sensor_tx\ib_benchmark.log: The process cannot access the file because it is being used by another process (32)
+
+($CALLTRACE:00A5FA48:75529F54,00AADC75*2,AD,3281,0D,76F551C0,8F,0F4FE,EF2D45,3197,F1BD8A,5529F4E,00AA320D*3,75529F4E*2,6F199DA,551D6E2,700,6F19C2A,5529F4E,00AA320D*5,2AC7,DEB9DE,F1AF,FEB69,750E5D47,6F0E009,DF8C)
+
+----------Exception---------------------21-07-2026 21:21:58.178----------------
+EOSError   Code=0x0EEDFADE   Flags=0x1   Addr=0x75529F54   PID=14688   TID=8128 [Main Thread]   Build=18415
+
+Cannot create file: C:\Users\danie\eclipse-workspace\sensor_tx\ib_benchmark.log: The process cannot access the file because it is being used by another process (32)
+
+($CALLTRACE:00A5FA48:75529F54,00AADC75*2,AD,3281,0D,76F551C0,8F,0F4FE,EF2D45,3197,F1BD8A,5529F4E,00AA320D*3,75529F4E*2,6F199DA,551D6E2,700,6F19C2A,5529F4E,00AA320D*5,2AC7,DEB9DE,F1AF,FEB69,750E5D47,6F0E009,DF8C)
+
+----------Exception---------------------21-07-2026 21:21:58.179----------------
+EOSError   Code=0x0EEDFADE   Flags=0x1   Addr=0x75529F54   PID=14688   TID=8128 [Main Thread]   Build=18415
+
+Cannot create file: C:\Users\danie\eclipse-workspace\sensor_tx\ib_benchmark.log: The process cannot access the file because it is being used by another process (32)
+
+($CALLTRACE:00A5FA48:75529F54,00AADC75*2,AD,3281,0D,76F551C0,8F,0F4FE,EF2D45,3197,F1BD8A,5529F4E,00AA320D*3,75529F4E*2,6F199DA,551D6E2,700,6F19C2A,5529F4E,00AA320D*5,2AC7,DEB9DE,F1AF,FEB69,750E5D47,6F0E009,DF8C)
+
+----------Started-----------------------21-07-2026 21:24:28.898----------------
+Build=18415   PID=29100   TID=32544   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------22-07-2026 04:48:32.318----------------
+Build=18415   PID=26792   TID=32236   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 12:18:57.836----------------
+Build=18415   PID=15748   TID=49028   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 13:28:41.683----------------
+Build=18415   PID=29692   TID=31180   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 13:31:54.767----------------
+Build=18415   PID=41284   TID=14468   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 14:37:13.742----------------
+Build=18415   PID=12172   TID=21512   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 14:38:02.096----------------
+Build=18415   PID=58452   TID=6224   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 14:38:45.078----------------
+Build=18415   PID=54540   TID=14236   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 14:43:23.981----------------
+Build=18415   PID=26076   TID=60600   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 14:43:38.285----------------
+Build=18415   PID=46392   TID=48092   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 14:55:45.214----------------
+Build=18415   PID=25976   TID=3700   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 15:02:12.557----------------
+Build=18415   PID=32860   TID=36056   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 15:04:26.719----------------
+Build=18415   PID=46224   TID=36392   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 15:05:55.444----------------
+Build=18415   PID=55760   TID=39308   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 15:08:51.512----------------
+Build=18415   PID=29856   TID=49012   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 15:09:56.035----------------
+Build=18415   PID=33060   TID=18744   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------01-10-2026 15:13:28.168----------------
+Build=18415   PID=19408   TID=58336   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------02-10-2026 09:53:00.997----------------
+Build=18415   PID=37088   TID=27608   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------02-10-2026 10:05:13.864----------------
+Build=18415   PID=63728   TID=36560   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------02-10-2026 10:08:12.513----------------
+Build=18415   PID=25776   TID=50996   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------02-10-2026 10:28:29.405----------------
+Build=18415   PID=4196   TID=62320   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------02-10-2026 11:12:32.940----------------
+Build=18415   PID=57492   TID=37908   Computer=[COORDINATOR_HOST]
+
+----------Started-----------------------02-10-2026 11:53:14.075----------------
+Build=18415   PID=44484   TID=17852   Computer=[COORDINATOR_HOST]
+

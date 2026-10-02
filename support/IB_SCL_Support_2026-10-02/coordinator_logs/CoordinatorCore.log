@@ -1,0 +1,791 @@
+20-07-2026 14:30:39.688 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+20-07-2026 14:30:40.485 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+20-07-2026 14:30:40.948 [38748|40244] License service initialized
+20-07-2026 14:30:40.949 TCoordSubscriptionManager.LoadFromFile - Subscription file does not exist
+20-07-2026 14:33:35.419 Error registering agent [COORDINATOR_HOST]. Status = Error
+20-07-2026 14:33:35.419 RegisterAgent([COORDINATOR_HOST]) returned error message: Assigning both Initiator and CI Initiator roles is not allowed.
+20-07-2026 14:33:58.654 Agent ([COORDINATOR_HOST]) request for license assignment was not satisfied because a different assignment already existed
+Requested assignment = None Initiator, None CiInitiator, None Helper, 24 Cores
+Existing assignment = None Initiator, Fixed CiInitiator, None Helper, 0 Cores
+20-07-2026 15:35:04.038 Agent ib-scl-helper turned offline
+20-07-2026 15:36:02.696 Deleting offline agent ib-scl-helper
+20-07-2026 15:42:21.702 Agent ib-scl-helper turned offline
+20-07-2026 15:42:22.027 Agent ib-scl-helper turned online
+20-07-2026 15:42:37.853 Agent ib-scl-helper turned offline
+20-07-2026 15:43:34.574 Deleting offline agent ib-scl-helper
+20-07-2026 15:50:01.705 Agent ib-scl-helper turned offline
+20-07-2026 15:51:01.352 Deleting offline agent ib-scl-helper
+20-07-2026 16:26:36.710 Agent ib-scl-helper turned offline
+20-07-2026 16:27:18.196 Deleting offline agent ib-scl-helper
+20-07-2026 16:27:54.040 Agent [COORDINATOR_HOST] turned offline
+21-07-2026 11:36:11.332 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+21-07-2026 11:36:11.914 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+21-07-2026 11:36:20.522 Agent [COORDINATOR_HOST] turned online
+21-07-2026 11:36:28.757 [25684|33496] License service initialized
+21-07-2026 16:27:14.501 Agent [COORDINATOR_HOST] turned offline
+21-07-2026 16:27:15.748 Agent [COORDINATOR_HOST] turned online
+21-07-2026 20:49:43.179 Agent ib-scl-helper turned offline
+21-07-2026 20:50:48.560 Deleting offline agent ib-scl-helper
+21-07-2026 21:08:56.713 Agent ib-scl-helper turned offline
+21-07-2026 21:09:29.032 Deleting offline agent ib-scl-helper
+21-07-2026 21:31:37.518 Agent ib-scl-helper turned offline
+21-07-2026 21:32:18.835 Deleting offline agent ib-scl-helper
+24-07-2026 08:55:44.769 Agent [COORDINATOR_HOST] turned offline
+24-07-2026 08:55:50.925 Agent [COORDINATOR_HOST] turned online
+24-07-2026 16:55:52.502 Agent [COORDINATOR_HOST] turned offline
+24-07-2026 16:55:53.747 Agent [COORDINATOR_HOST] turned online
+24-07-2026 18:01:52.128 Agent [COORDINATOR_HOST] turned offline
+24-07-2026 18:01:52.227 Agent [COORDINATOR_HOST] turned online
+24-07-2026 18:26:15.700 Agent [COORDINATOR_HOST] turned offline
+24-07-2026 18:34:35.256 Agent [COORDINATOR_HOST] turned online
+24-07-2026 19:26:37.123 Agent [COORDINATOR_HOST] turned offline
+24-07-2026 19:26:37.144 Agent [COORDINATOR_HOST] turned online
+25-07-2026 19:22:13.659 Agent [COORDINATOR_HOST] turned offline
+25-07-2026 19:22:18.457 Agent [COORDINATOR_HOST] turned online
+25-07-2026 20:13:42.546 Agent [COORDINATOR_HOST] turned offline
+25-07-2026 20:13:43.737 Agent [COORDINATOR_HOST] turned online
+----------Started-----------------------28/07/2026 02:30:09.092----------------
+Build=18415   PID=7388   TID=10044   Computer=[COORDINATOR_HOST]
+
+28-07-2026 02:30:09.149 Attaching notify queue to thread
+28-07-2026 02:30:09.150 Initializing service object
+28-07-2026 02:30:09.150 Opening registry
+28-07-2026 02:30:09.154 Initializing coordinator object
+28-07-2026 02:30:09.155 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+28-07-2026 02:30:09.476 Modifying standby setting
+28-07-2026 02:30:09.476 Loading backup coordinator list
+28-07-2026 02:30:09.476 Creating timers
+28-07-2026 02:30:09.477 Creating server object
+28-07-2026 02:30:09.502 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+28-07-2026 02:30:09.503 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+28-07-2026 02:30:09.504 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+28-07-2026 02:30:09.504 OpenSSL cipher list set to AES256+SHA384
+28-07-2026 02:30:09.504 Allocating current version update ID
+28-07-2026 02:30:10.634 Loading subscription information
+28-07-2026 02:30:12.701 License information:
+28-07-2026 02:30:12.701 Product Features:
+
+28-07-2026 02:30:12.701 Addon Features:
+
+28-07-2026 02:30:12.701 License Tier: 
+28-07-2026 02:30:12.701 Contract End Date: 
+28-07-2026 02:30:12.701 Dashboard Utilization Page: False
+28-07-2026 02:30:12.705 Creating coordinator state object
+28-07-2026 02:30:12.705 Coordinator is active
+28-07-2026 02:30:12.705 Service is running
+28-07-2026 02:30:13.004 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+28-07-2026 02:30:13.004 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+28-07-2026 02:30:13.004 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+28-07-2026 02:30:13.007 ProcessGetlicenseInfo - License not initialized yet
+28-07-2026 02:30:20.766 [7388|10044] License service initialized
+28-07-2026 02:30:20.776 Agent [COORDINATOR_HOST] turned online
+28-07-2026 08:25:48.664 Releasing CoordCore object
+----------Started-----------------------28/07/2026 08:26:31.930----------------
+Build=18415   PID=7112   TID=8900   Computer=[COORDINATOR_HOST]
+
+28-07-2026 08:26:31.986 Attaching notify queue to thread
+28-07-2026 08:26:31.986 Initializing service object
+28-07-2026 08:26:31.986 Opening registry
+28-07-2026 08:26:32.023 Initializing coordinator object
+28-07-2026 08:26:32.025 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+28-07-2026 08:26:32.273 Modifying standby setting
+28-07-2026 08:26:32.273 Loading backup coordinator list
+28-07-2026 08:26:32.273 Creating timers
+28-07-2026 08:26:32.274 Creating server object
+28-07-2026 08:26:32.305 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+28-07-2026 08:26:32.305 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+28-07-2026 08:26:32.306 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+28-07-2026 08:26:32.306 OpenSSL cipher list set to AES256+SHA384
+28-07-2026 08:26:32.306 Allocating current version update ID
+28-07-2026 08:26:33.454 Loading subscription information
+28-07-2026 08:26:35.531 License information:
+28-07-2026 08:26:35.531 Product Features:
+
+28-07-2026 08:26:35.531 Addon Features:
+
+28-07-2026 08:26:35.531 License Tier: 
+28-07-2026 08:26:35.531 Contract End Date: 
+28-07-2026 08:26:35.531 Dashboard Utilization Page: False
+28-07-2026 08:26:35.535 Creating coordinator state object
+28-07-2026 08:26:35.535 Coordinator is active
+28-07-2026 08:26:35.535 Service is running
+28-07-2026 08:26:37.009 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+28-07-2026 08:26:37.009 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+28-07-2026 08:26:37.009 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+28-07-2026 08:26:37.013 ProcessGetlicenseInfo - License not initialized yet
+28-07-2026 08:26:42.818 Agent [COORDINATOR_HOST] turned online
+28-07-2026 08:26:43.536 [7112|8900] License service initialized
+29-07-2026 08:00:09.593 Agent [COORDINATOR_HOST] turned offline
+29-07-2026 08:00:09.593 Agent [COORDINATOR_HOST] did not report for 30 seconds
+29-07-2026 08:00:13.526 Agent [COORDINATOR_HOST] turned online
+02-08-2026 15:29:20.500 Agent [COORDINATOR_HOST] turned offline
+02-08-2026 15:29:21.853 Agent [COORDINATOR_HOST] did not report for 30 seconds
+02-08-2026 15:29:21.990 Agent [COORDINATOR_HOST] turned online
+02-08-2026 20:23:49.500 Agent [COORDINATOR_HOST] turned offline
+02-08-2026 20:23:49.978 Agent [COORDINATOR_HOST] did not report for 30 seconds
+02-08-2026 20:23:50.748 Agent [COORDINATOR_HOST] turned online
+03-08-2026 10:20:41.504 Agent [COORDINATOR_HOST] turned offline
+03-08-2026 10:20:42.013 Agent [COORDINATOR_HOST] did not report for 30 seconds
+03-08-2026 10:20:42.780 Agent [COORDINATOR_HOST] turned online
+04-08-2026 21:58:18.337 Releasing CoordCore object
+----------Started-----------------------04/08/2026 21:59:04.682----------------
+Build=18415   PID=7784   TID=9472   Computer=[COORDINATOR_HOST]
+
+04-08-2026 21:59:04.761 Attaching notify queue to thread
+04-08-2026 21:59:04.761 Initializing service object
+04-08-2026 21:59:04.761 Opening registry
+04-08-2026 21:59:04.822 Initializing coordinator object
+04-08-2026 21:59:04.824 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+04-08-2026 21:59:05.035 Modifying standby setting
+04-08-2026 21:59:05.035 Loading backup coordinator list
+04-08-2026 21:59:05.036 Creating timers
+04-08-2026 21:59:05.036 Creating server object
+04-08-2026 21:59:05.061 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+04-08-2026 21:59:05.061 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+04-08-2026 21:59:05.062 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+04-08-2026 21:59:05.062 OpenSSL cipher list set to AES256+SHA384
+04-08-2026 21:59:05.062 Allocating current version update ID
+04-08-2026 21:59:06.019 Loading subscription information
+04-08-2026 21:59:08.101 License information:
+04-08-2026 21:59:08.101 Product Features:
+
+04-08-2026 21:59:08.101 Addon Features:
+
+04-08-2026 21:59:08.101 License Tier: 
+04-08-2026 21:59:08.101 Contract End Date: 
+04-08-2026 21:59:08.101 Dashboard Utilization Page: False
+04-08-2026 21:59:08.104 Creating coordinator state object
+04-08-2026 21:59:08.104 Coordinator is active
+04-08-2026 21:59:08.104 Service is running
+04-08-2026 21:59:10.011 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+04-08-2026 21:59:10.011 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+04-08-2026 21:59:10.011 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+04-08-2026 21:59:10.017 ProcessGetlicenseInfo - License not initialized yet
+04-08-2026 21:59:12.255 Agent [COORDINATOR_HOST] turned online
+04-08-2026 21:59:16.113 [7784|9472] License service initialized
+10-08-2026 15:29:00.505 Agent [COORDINATOR_HOST] turned offline
+10-08-2026 15:29:01.788 Agent [COORDINATOR_HOST] did not report for 30 seconds
+10-08-2026 15:29:01.853 Agent [COORDINATOR_HOST] turned online
+10-08-2026 16:13:42.500 Agent [COORDINATOR_HOST] turned offline
+10-08-2026 16:13:42.500 Agent [COORDINATOR_HOST] did not report for 30 seconds
+10-08-2026 16:13:43.812 Agent [COORDINATOR_HOST] turned online
+10-08-2026 17:18:03.502 Agent [COORDINATOR_HOST] turned offline
+10-08-2026 17:18:04.019 Agent [COORDINATOR_HOST] did not report for 30 seconds
+10-08-2026 17:18:04.777 Agent [COORDINATOR_HOST] turned online
+10-08-2026 21:03:08.500 Agent [COORDINATOR_HOST] turned offline
+10-08-2026 21:03:09.022 Agent [COORDINATOR_HOST] did not report for 30 seconds
+10-08-2026 21:03:09.741 Agent [COORDINATOR_HOST] turned online
+11-08-2026 12:22:35.720 Agent [COORDINATOR_HOST] turned offline
+11-08-2026 12:22:35.720 Agent [COORDINATOR_HOST] did not report for 30 seconds
+11-08-2026 12:22:36.742 Agent [COORDINATOR_HOST] turned online
+11-08-2026 15:30:46.500 Agent [COORDINATOR_HOST] turned offline
+11-08-2026 15:30:46.501 Agent [COORDINATOR_HOST] did not report for 30 seconds
+11-08-2026 15:30:47.749 Agent [COORDINATOR_HOST] turned online
+13-08-2026 02:45:43.105 Releasing CoordCore object
+----------Started-----------------------13/08/2026 02:46:37.970----------------
+Build=18415   PID=7312   TID=11764   Computer=[COORDINATOR_HOST]
+
+13-08-2026 02:46:38.007 Attaching notify queue to thread
+13-08-2026 02:46:38.007 Initializing service object
+13-08-2026 02:46:38.007 Opening registry
+13-08-2026 02:46:38.008 Initializing coordinator object
+13-08-2026 02:46:38.008 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+13-08-2026 02:46:38.231 Modifying standby setting
+13-08-2026 02:46:38.231 Loading backup coordinator list
+13-08-2026 02:46:38.231 Creating timers
+13-08-2026 02:46:38.231 Creating server object
+13-08-2026 02:46:38.249 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+13-08-2026 02:46:38.249 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+13-08-2026 02:46:38.251 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+13-08-2026 02:46:38.251 OpenSSL cipher list set to AES256+SHA384
+13-08-2026 02:46:38.251 Allocating current version update ID
+13-08-2026 02:46:38.918 Loading subscription information
+13-08-2026 02:46:40.952 License information:
+13-08-2026 02:46:40.952 Product Features:
+
+13-08-2026 02:46:40.952 Addon Features:
+
+13-08-2026 02:46:40.952 License Tier: 
+13-08-2026 02:46:40.952 Contract End Date: 
+13-08-2026 02:46:40.952 Dashboard Utilization Page: False
+13-08-2026 02:46:40.957 Creating coordinator state object
+13-08-2026 02:46:40.957 Coordinator is active
+13-08-2026 02:46:40.958 Service is running
+13-08-2026 02:46:42.015 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+13-08-2026 02:46:42.015 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+13-08-2026 02:46:42.015 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+13-08-2026 02:46:42.015 ProcessGetlicenseInfo - License not initialized yet
+13-08-2026 02:46:42.480 Agent [COORDINATOR_HOST] turned online
+13-08-2026 02:46:48.969 [7312|11764] License service initialized
+13-08-2026 02:47:37.489 Releasing CoordCore object
+----------Started-----------------------13/08/2026 02:48:16.797----------------
+Build=18415   PID=5536   TID=8296   Computer=[COORDINATOR_HOST]
+
+13-08-2026 02:48:16.825 Attaching notify queue to thread
+13-08-2026 02:48:16.825 Initializing service object
+13-08-2026 02:48:16.825 Opening registry
+13-08-2026 02:48:16.836 Initializing coordinator object
+13-08-2026 02:48:16.836 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+13-08-2026 02:48:17.166 Modifying standby setting
+13-08-2026 02:48:17.166 Loading backup coordinator list
+13-08-2026 02:48:17.166 Creating timers
+13-08-2026 02:48:17.167 Creating server object
+13-08-2026 02:48:17.189 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+13-08-2026 02:48:17.189 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+13-08-2026 02:48:17.189 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+13-08-2026 02:48:17.189 OpenSSL cipher list set to AES256+SHA384
+13-08-2026 02:48:17.190 Allocating current version update ID
+13-08-2026 02:48:17.902 Loading subscription information
+13-08-2026 02:48:17.928 [5536|8296] License service initialized
+13-08-2026 02:48:17.934 License information:
+13-08-2026 02:48:17.934 Product Features:
+API Access
+Multiple Builds
+Multiple Helpers
+Coordinator Dashboard
+CI Addons
+External User Management
+SCL Helpers
+13-08-2026 02:48:17.934 Addon Features:
+Incredibuild for Microsoft Visual Studio C/C++
+Incredibuild for C#
+Incredibuild for Make & Build Tools
+Generic Acceleration
+Incredibuild for Xbox One
+Incredibuild for Google Stadia
+Incredibuild for Unit Tests
+Incredibuild for Coverity
+13-08-2026 02:48:17.934 License Tier: Internal
+13-08-2026 02:48:17.934 Contract End Date: 
+13-08-2026 02:48:17.934 Dashboard Utilization Page: False
+13-08-2026 02:48:17.941 Creating coordinator state object
+13-08-2026 02:48:17.941 Coordinator is active
+13-08-2026 02:48:17.941 Service is running
+13-08-2026 02:48:18.016 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+13-08-2026 02:48:18.016 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+13-08-2026 02:48:18.016 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+13-08-2026 02:48:23.668 Agent [COORDINATOR_HOST] turned online
+13-08-2026 02:48:28.631 Releasing CoordCore object
+----------Started-----------------------13/08/2026 02:49:13.891----------------
+Build=18415   PID=5528   TID=7364   Computer=[COORDINATOR_HOST]
+
+13-08-2026 02:49:13.926 Attaching notify queue to thread
+13-08-2026 02:49:13.926 Initializing service object
+13-08-2026 02:49:13.926 Opening registry
+13-08-2026 02:49:13.939 Initializing coordinator object
+13-08-2026 02:49:13.939 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+13-08-2026 02:49:14.461 Modifying standby setting
+13-08-2026 02:49:14.461 Loading backup coordinator list
+13-08-2026 02:49:14.463 Creating timers
+13-08-2026 02:49:14.463 Creating server object
+13-08-2026 02:49:14.494 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+13-08-2026 02:49:14.494 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+13-08-2026 02:49:14.494 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+13-08-2026 02:49:14.494 OpenSSL cipher list set to AES256+SHA384
+13-08-2026 02:49:14.494 Allocating current version update ID
+13-08-2026 02:49:15.288 Loading subscription information
+13-08-2026 02:49:15.341 [5528|7364] License service initialized
+13-08-2026 02:49:15.346 License information:
+13-08-2026 02:49:15.346 Product Features:
+API Access
+Multiple Builds
+Multiple Helpers
+Coordinator Dashboard
+CI Addons
+External User Management
+SCL Helpers
+13-08-2026 02:49:15.346 Addon Features:
+Incredibuild for Microsoft Visual Studio C/C++
+Incredibuild for C#
+Incredibuild for Make & Build Tools
+Generic Acceleration
+Incredibuild for Xbox One
+Incredibuild for Google Stadia
+Incredibuild for Unit Tests
+Incredibuild for Coverity
+13-08-2026 02:49:15.346 License Tier: Internal
+13-08-2026 02:49:15.346 Contract End Date: 
+13-08-2026 02:49:15.346 Dashboard Utilization Page: False
+13-08-2026 02:49:15.353 Creating coordinator state object
+13-08-2026 02:49:15.353 Coordinator is active
+13-08-2026 02:49:15.353 Service is running
+13-08-2026 02:49:17.011 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+13-08-2026 02:49:17.011 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+13-08-2026 02:49:17.011 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+13-08-2026 02:49:22.642 Agent [COORDINATOR_HOST] turned online
+13-08-2026 11:55:57.500 Agent [COORDINATOR_HOST] turned offline
+13-08-2026 11:55:58.857 Agent [COORDINATOR_HOST] did not report for 30 seconds
+13-08-2026 11:55:58.952 Agent [COORDINATOR_HOST] turned online
+17-08-2026 23:27:33.502 Agent [COORDINATOR_HOST] turned offline
+17-08-2026 23:27:34.852 Agent [COORDINATOR_HOST] did not report for 30 seconds
+17-08-2026 23:27:35.145 Agent [COORDINATOR_HOST] turned online
+19-08-2026 14:18:02.546 Agent [COORDINATOR_HOST] turned offline
+19-08-2026 14:18:03.775 Agent [COORDINATOR_HOST] did not report for 30 seconds
+19-08-2026 14:18:03.844 Agent [COORDINATOR_HOST] turned online
+----------Started-----------------------19/08/2026 14:18:26.484----------------
+Build=18415   PID=33888   TID=20988   Computer=[COORDINATOR_HOST]
+
+19-08-2026 14:18:26.496 Attaching notify queue to thread
+19-08-2026 14:18:26.496 Initializing service object
+19-08-2026 14:18:26.496 Opening registry
+19-08-2026 14:18:26.498 Initializing coordinator object
+19-08-2026 14:18:26.498 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+19-08-2026 14:18:27.381 Modifying standby setting
+19-08-2026 14:18:27.381 Loading backup coordinator list
+19-08-2026 14:18:27.382 Creating timers
+19-08-2026 14:18:27.383 Creating server object
+19-08-2026 14:18:27.419 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+19-08-2026 14:18:27.424 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+19-08-2026 14:18:27.424 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+19-08-2026 14:18:27.424 OpenSSL cipher list set to AES256+SHA384
+19-08-2026 14:18:27.424 Allocating current version update ID
+19-08-2026 14:18:28.385 Loading subscription information
+19-08-2026 14:18:28.395 [33888|20988] License service initialized
+19-08-2026 14:18:28.396 License information:
+19-08-2026 14:18:28.396 Product Features:
+
+19-08-2026 14:18:28.396 Addon Features:
+
+19-08-2026 14:18:28.396 License Tier: Internal
+19-08-2026 14:18:28.396 Contract End Date: 
+19-08-2026 14:18:28.396 Dashboard Utilization Page: False
+19-08-2026 14:18:28.402 Creating coordinator state object
+19-08-2026 14:18:28.402 Coordinator is active
+19-08-2026 14:18:28.402 Service is running
+19-08-2026 14:18:28.403 Agent [COORDINATOR_HOST] turned online
+19-08-2026 14:18:30.006 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+19-08-2026 14:18:30.006 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+19-08-2026 14:18:30.006 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+19-08-2026 16:11:10.753 Agent [COORDINATOR_HOST] turned offline
+19-08-2026 16:11:11.020 Agent [COORDINATOR_HOST] did not report for 30 seconds
+19-08-2026 16:11:11.743 Agent [COORDINATOR_HOST] turned online
+19-08-2026 18:44:57.560 Agent [COORDINATOR_HOST] turned offline
+19-08-2026 18:44:57.560 Agent [COORDINATOR_HOST] did not report for 30 seconds
+19-08-2026 18:44:58.763 Agent [COORDINATOR_HOST] turned online
+21-08-2026 09:56:07.310 Releasing CoordCore object
+----------Started-----------------------21/08/2026 09:56:56.161----------------
+Build=18415   PID=6400   TID=9524   Computer=[COORDINATOR_HOST]
+
+21-08-2026 09:56:56.199 Attaching notify queue to thread
+21-08-2026 09:56:56.199 Initializing service object
+21-08-2026 09:56:56.199 Opening registry
+21-08-2026 09:56:56.212 Initializing coordinator object
+21-08-2026 09:56:56.212 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+21-08-2026 09:56:56.514 Modifying standby setting
+21-08-2026 09:56:56.514 Loading backup coordinator list
+21-08-2026 09:56:56.515 Creating timers
+21-08-2026 09:56:56.515 Creating server object
+21-08-2026 09:56:56.542 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+21-08-2026 09:56:56.542 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+21-08-2026 09:56:56.543 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+21-08-2026 09:56:56.543 OpenSSL cipher list set to AES256+SHA384
+21-08-2026 09:56:56.544 Allocating current version update ID
+21-08-2026 09:56:57.289 Loading subscription information
+21-08-2026 09:56:59.361 [6400|9524] License service initialized
+21-08-2026 09:56:59.361 License information:
+21-08-2026 09:56:59.361 Product Features:
+
+21-08-2026 09:56:59.361 Addon Features:
+
+21-08-2026 09:56:59.361 License Tier: Internal
+21-08-2026 09:56:59.361 Contract End Date: 
+21-08-2026 09:56:59.361 Dashboard Utilization Page: False
+21-08-2026 09:56:59.373 Creating coordinator state object
+21-08-2026 09:56:59.373 Coordinator is active
+21-08-2026 09:56:59.374 Service is running
+21-08-2026 09:57:00.010 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+21-08-2026 09:57:00.010 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+21-08-2026 09:57:00.010 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+21-08-2026 09:57:04.833 Agent [COORDINATOR_HOST] turned online
+25-08-2026 10:27:15.500 Agent [COORDINATOR_HOST] turned offline
+25-08-2026 10:27:16.017 Agent [COORDINATOR_HOST] did not report for 30 seconds
+25-08-2026 10:27:21.852 Agent [COORDINATOR_HOST] turned online
+25-08-2026 23:28:09.501 Agent [COORDINATOR_HOST] turned offline
+25-08-2026 23:28:10.788 Agent [COORDINATOR_HOST] did not report for 30 seconds
+25-08-2026 23:28:10.900 Agent [COORDINATOR_HOST] turned online
+27-08-2026 16:29:14.793 Agent [COORDINATOR_HOST] turned offline
+27-08-2026 16:29:15.017 Agent [COORDINATOR_HOST] did not report for 30 seconds
+27-08-2026 16:29:15.759 Agent [COORDINATOR_HOST] turned online
+30-08-2026 23:29:56.502 Agent [COORDINATOR_HOST] turned offline
+30-08-2026 23:29:57.820 Agent [COORDINATOR_HOST] did not report for 30 seconds
+30-08-2026 23:29:58.874 Agent [COORDINATOR_HOST] turned online
+31-08-2026 12:36:35.501 Agent [COORDINATOR_HOST] turned offline
+31-08-2026 12:36:36.018 Agent [COORDINATOR_HOST] did not report for 30 seconds
+31-08-2026 12:36:37.230 Agent [COORDINATOR_HOST] turned online
+02-09-2026 09:38:52.500 Agent [COORDINATOR_HOST] turned offline
+02-09-2026 09:38:53.806 Agent [COORDINATOR_HOST] did not report for 30 seconds
+02-09-2026 09:38:56.885 Agent [COORDINATOR_HOST] turned online
+02-09-2026 14:20:18.501 Agent [COORDINATOR_HOST] turned offline
+02-09-2026 14:20:18.501 Agent [COORDINATOR_HOST] did not report for 30 seconds
+02-09-2026 14:20:19.927 Agent [COORDINATOR_HOST] turned online
+02-09-2026 16:37:32.500 Agent [COORDINATOR_HOST] turned offline
+02-09-2026 16:37:32.500 Agent [COORDINATOR_HOST] did not report for 30 seconds
+02-09-2026 16:37:33.731 Agent [COORDINATOR_HOST] turned online
+02-09-2026 21:35:30.501 Agent [COORDINATOR_HOST] turned offline
+02-09-2026 21:35:31.842 Agent [COORDINATOR_HOST] did not report for 30 seconds
+02-09-2026 21:35:31.910 Agent [COORDINATOR_HOST] turned online
+02-09-2026 23:27:54.700 Agent [COORDINATOR_HOST] turned offline
+02-09-2026 23:27:55.826 Agent [COORDINATOR_HOST] did not report for 30 seconds
+02-09-2026 23:27:55.889 Agent [COORDINATOR_HOST] turned online
+03-09-2026 00:39:08.033 Agent [COORDINATOR_HOST] turned offline
+03-09-2026 00:39:08.033 Agent [COORDINATOR_HOST] did not report for 30 seconds
+03-09-2026 00:48:48.548 Agent [COORDINATOR_HOST] turned online
+03-09-2026 02:47:38.651 Agent [COORDINATOR_HOST] turned offline
+03-09-2026 02:47:38.651 Agent [COORDINATOR_HOST] did not report for 30 seconds
+03-09-2026 02:47:39.504 Agent [COORDINATOR_HOST] turned online
+03-09-2026 18:22:46.500 Agent [COORDINATOR_HOST] turned offline
+03-09-2026 18:22:47.822 Agent [COORDINATOR_HOST] did not report for 30 seconds
+03-09-2026 18:22:49.742 Agent [COORDINATOR_HOST] turned online
+04-09-2026 08:03:06.560 Agent [COORDINATOR_HOST] turned offline
+04-09-2026 08:03:06.560 Agent [COORDINATOR_HOST] did not report for 30 seconds
+04-09-2026 08:03:07.284 Agent [COORDINATOR_HOST] turned online
+04-09-2026 14:48:26.515 Agent [COORDINATOR_HOST] turned offline
+04-09-2026 14:48:27.176 Agent [COORDINATOR_HOST] did not report for 30 seconds
+04-09-2026 14:48:27.202 Agent [COORDINATOR_HOST] turned online
+06-09-2026 09:27:21.583 Agent [COORDINATOR_HOST] turned offline
+06-09-2026 09:27:21.583 Agent [COORDINATOR_HOST] did not report for 30 seconds
+06-09-2026 09:27:22.035 Agent [COORDINATOR_HOST] turned online
+06-09-2026 09:32:54.852 Agent [COORDINATOR_HOST] turned offline
+06-09-2026 09:32:54.852 Agent [COORDINATOR_HOST] did not report for 30 seconds
+06-09-2026 09:32:55.326 Agent [COORDINATOR_HOST] turned online
+06-09-2026 10:27:00.256 Agent [COORDINATOR_HOST] turned offline
+06-09-2026 10:27:00.256 Agent [COORDINATOR_HOST] did not report for 30 seconds
+06-09-2026 10:27:00.607 Agent [COORDINATOR_HOST] turned online
+06-09-2026 13:47:32.500 Agent [COORDINATOR_HOST] turned offline
+06-09-2026 13:47:32.500 Agent [COORDINATOR_HOST] did not report for 30 seconds
+06-09-2026 13:47:34.053 Agent [COORDINATOR_HOST] turned online
+06-09-2026 19:40:21.500 Agent [COORDINATOR_HOST] turned offline
+06-09-2026 19:40:22.830 Agent [COORDINATOR_HOST] did not report for 30 seconds
+06-09-2026 19:40:23.273 Agent [COORDINATOR_HOST] turned online
+07-09-2026 09:26:39.501 Agent [COORDINATOR_HOST] turned offline
+07-09-2026 09:26:39.501 Agent [COORDINATOR_HOST] did not report for 30 seconds
+07-09-2026 09:26:42.739 Agent [COORDINATOR_HOST] turned online
+08-09-2026 18:57:45.800 Agent [COORDINATOR_HOST] turned offline
+08-09-2026 18:57:45.836 Agent [COORDINATOR_HOST] did not report for 30 seconds
+08-09-2026 18:57:45.847 Agent [COORDINATOR_HOST] turned online
+09-09-2026 09:20:47.879 Agent [COORDINATOR_HOST] turned offline
+09-09-2026 09:20:47.879 Agent [COORDINATOR_HOST] did not report for 30 seconds
+09-09-2026 09:20:51.725 Agent [COORDINATOR_HOST] turned online
+11-09-2026 02:00:51.197 Releasing CoordCore object
+----------Started-----------------------11/09/2026 02:01:50.447----------------
+Build=18415   PID=6856   TID=10080   Computer=[COORDINATOR_HOST]
+
+11-09-2026 02:01:50.470 Attaching notify queue to thread
+11-09-2026 02:01:50.470 Initializing service object
+11-09-2026 02:01:50.470 Opening registry
+11-09-2026 02:01:50.476 Initializing coordinator object
+11-09-2026 02:01:50.476 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+11-09-2026 02:01:50.776 Modifying standby setting
+11-09-2026 02:01:50.776 Loading backup coordinator list
+11-09-2026 02:01:50.776 Creating timers
+11-09-2026 02:01:50.777 Creating server object
+11-09-2026 02:01:50.807 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+11-09-2026 02:01:50.807 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+11-09-2026 02:01:50.807 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+11-09-2026 02:01:50.807 OpenSSL cipher list set to AES256+SHA384
+11-09-2026 02:01:50.807 Allocating current version update ID
+11-09-2026 02:01:51.529 Loading subscription information
+11-09-2026 02:01:53.575 License information:
+11-09-2026 02:01:53.575 Product Features:
+
+11-09-2026 02:01:53.575 Addon Features:
+
+11-09-2026 02:01:53.575 License Tier: 
+11-09-2026 02:01:53.575 Contract End Date: 
+11-09-2026 02:01:53.575 Dashboard Utilization Page: False
+11-09-2026 02:01:53.575 Creating coordinator state object
+11-09-2026 02:01:53.575 Coordinator is active
+11-09-2026 02:01:53.575 Service is running
+11-09-2026 02:01:54.000 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+11-09-2026 02:01:54.000 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+11-09-2026 02:01:54.000 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+11-09-2026 02:01:54.016 ProcessGetlicenseInfo - License not initialized yet
+11-09-2026 02:01:55.173 Agent [COORDINATOR_HOST] turned online
+11-09-2026 02:02:01.588 [6856|10080] License service initialized
+11-09-2026 02:09:35.637 Releasing CoordCore object
+----------Started-----------------------11/09/2026 02:10:19.330----------------
+Build=18415   PID=5436   TID=7268   Computer=[COORDINATOR_HOST]
+
+11-09-2026 02:10:19.349 Attaching notify queue to thread
+11-09-2026 02:10:19.349 Initializing service object
+11-09-2026 02:10:19.349 Opening registry
+11-09-2026 02:10:19.370 Initializing coordinator object
+11-09-2026 02:10:19.370 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+11-09-2026 02:10:19.866 Modifying standby setting
+11-09-2026 02:10:19.866 Loading backup coordinator list
+11-09-2026 02:10:19.867 Creating timers
+11-09-2026 02:10:19.867 Creating server object
+11-09-2026 02:10:19.890 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+11-09-2026 02:10:19.891 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+11-09-2026 02:10:19.891 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+11-09-2026 02:10:19.891 OpenSSL cipher list set to AES256+SHA384
+11-09-2026 02:10:19.891 Allocating current version update ID
+11-09-2026 02:10:20.568 Loading subscription information
+11-09-2026 02:10:20.608 [5436|7268] License service initialized
+11-09-2026 02:10:20.608 License information:
+11-09-2026 02:10:20.608 Product Features:
+
+11-09-2026 02:10:20.608 Addon Features:
+
+11-09-2026 02:10:20.608 License Tier: Internal
+11-09-2026 02:10:20.608 Contract End Date: 
+11-09-2026 02:10:20.608 Dashboard Utilization Page: False
+11-09-2026 02:10:20.608 Creating coordinator state object
+11-09-2026 02:10:20.608 Coordinator is active
+11-09-2026 02:10:20.616 Service is running
+11-09-2026 02:10:21.012 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+11-09-2026 02:10:21.012 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+11-09-2026 02:10:21.012 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+11-09-2026 02:10:26.323 Agent [COORDINATOR_HOST] turned online
+11-09-2026 02:10:39.794 Releasing CoordCore object
+----------Started-----------------------11/09/2026 02:11:23.106----------------
+Build=18415   PID=5784   TID=8312   Computer=[COORDINATOR_HOST]
+
+11-09-2026 02:11:23.146 Attaching notify queue to thread
+11-09-2026 02:11:23.146 Initializing service object
+11-09-2026 02:11:23.147 Opening registry
+11-09-2026 02:11:23.160 Initializing coordinator object
+11-09-2026 02:11:23.160 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+11-09-2026 02:11:23.541 Modifying standby setting
+11-09-2026 02:11:23.541 Loading backup coordinator list
+11-09-2026 02:11:23.541 Creating timers
+11-09-2026 02:11:23.542 Creating server object
+11-09-2026 02:11:23.576 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+11-09-2026 02:11:23.576 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+11-09-2026 02:11:23.576 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+11-09-2026 02:11:23.576 OpenSSL cipher list set to AES256+SHA384
+11-09-2026 02:11:23.576 Allocating current version update ID
+11-09-2026 02:11:24.282 Loading subscription information
+11-09-2026 02:11:24.312 [5784|8312] License service initialized
+11-09-2026 02:11:24.312 License information:
+11-09-2026 02:11:24.312 Product Features:
+
+11-09-2026 02:11:24.312 Addon Features:
+
+11-09-2026 02:11:24.312 License Tier: Internal
+11-09-2026 02:11:24.312 Contract End Date: 
+11-09-2026 02:11:24.312 Dashboard Utilization Page: False
+11-09-2026 02:11:24.320 Creating coordinator state object
+11-09-2026 02:11:24.320 Coordinator is active
+11-09-2026 02:11:24.322 Service is running
+11-09-2026 02:11:25.011 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+11-09-2026 02:11:25.011 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+11-09-2026 02:11:25.011 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+11-09-2026 02:11:30.632 Agent [COORDINATOR_HOST] turned online
+12-09-2026 17:27:27.502 Agent [COORDINATOR_HOST] turned offline
+12-09-2026 17:27:28.008 Agent [COORDINATOR_HOST] did not report for 30 seconds
+12-09-2026 17:27:31.607 Agent [COORDINATOR_HOST] turned online
+16-09-2026 01:30:07.178 Releasing CoordCore object
+----------Started-----------------------16/09/2026 01:30:55.463----------------
+Build=18415   PID=7060   TID=9956   Computer=[COORDINATOR_HOST]
+
+16-09-2026 01:30:55.496 Attaching notify queue to thread
+16-09-2026 01:30:55.496 Initializing service object
+16-09-2026 01:30:55.496 Opening registry
+16-09-2026 01:30:55.509 Initializing coordinator object
+16-09-2026 01:30:55.509 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+16-09-2026 01:30:55.837 Modifying standby setting
+16-09-2026 01:30:55.837 Loading backup coordinator list
+16-09-2026 01:30:55.839 Creating timers
+16-09-2026 01:30:55.839 Creating server object
+16-09-2026 01:30:55.873 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+16-09-2026 01:30:55.875 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+16-09-2026 01:30:55.876 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+16-09-2026 01:30:55.876 OpenSSL cipher list set to AES256+SHA384
+16-09-2026 01:30:55.877 Allocating current version update ID
+16-09-2026 01:30:56.636 Loading subscription information
+16-09-2026 01:30:58.691 License information:
+16-09-2026 01:30:58.691 Product Features:
+
+16-09-2026 01:30:58.691 Addon Features:
+
+16-09-2026 01:30:58.691 License Tier: 
+16-09-2026 01:30:58.691 Contract End Date: 
+16-09-2026 01:30:58.691 Dashboard Utilization Page: False
+16-09-2026 01:30:58.693 Creating coordinator state object
+16-09-2026 01:30:58.693 Coordinator is active
+16-09-2026 01:30:58.693 Service is running
+16-09-2026 01:30:59.008 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+16-09-2026 01:30:59.008 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+16-09-2026 01:30:59.008 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+16-09-2026 01:30:59.015 ProcessGetlicenseInfo - License not initialized yet
+16-09-2026 01:31:00.344 Agent [COORDINATOR_HOST] turned online
+16-09-2026 01:31:06.704 [7060|9956] License service initialized
+16-09-2026 01:31:30.103 Releasing CoordCore object
+----------Started-----------------------16/09/2026 01:32:14.721----------------
+Build=18415   PID=5700   TID=8628   Computer=[COORDINATOR_HOST]
+
+16-09-2026 01:32:14.764 Attaching notify queue to thread
+16-09-2026 01:32:14.764 Initializing service object
+16-09-2026 01:32:14.764 Opening registry
+16-09-2026 01:32:14.776 Initializing coordinator object
+16-09-2026 01:32:14.776 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+16-09-2026 01:32:15.068 Modifying standby setting
+16-09-2026 01:32:15.068 Loading backup coordinator list
+16-09-2026 01:32:15.071 Creating timers
+16-09-2026 01:32:15.073 Creating server object
+16-09-2026 01:32:15.124 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+16-09-2026 01:32:15.125 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+16-09-2026 01:32:15.125 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+16-09-2026 01:32:15.125 OpenSSL cipher list set to AES256+SHA384
+16-09-2026 01:32:15.125 Allocating current version update ID
+16-09-2026 01:32:15.874 Loading subscription information
+16-09-2026 01:32:15.899 [5700|8628] License service initialized
+16-09-2026 01:32:15.901 License information:
+16-09-2026 01:32:15.901 Product Features:
+
+16-09-2026 01:32:15.901 Addon Features:
+
+16-09-2026 01:32:15.901 License Tier: Internal
+16-09-2026 01:32:15.901 Contract End Date: 
+16-09-2026 01:32:15.901 Dashboard Utilization Page: False
+16-09-2026 01:32:15.903 Creating coordinator state object
+16-09-2026 01:32:15.903 Coordinator is active
+16-09-2026 01:32:15.903 Service is running
+16-09-2026 01:32:16.015 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+16-09-2026 01:32:16.015 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+16-09-2026 01:32:16.015 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+16-09-2026 01:32:22.938 Agent [COORDINATOR_HOST] turned online
+16-09-2026 01:32:27.086 Releasing CoordCore object
+----------Started-----------------------16/09/2026 01:33:12.685----------------
+Build=18415   PID=5700   TID=8384   Computer=[COORDINATOR_HOST]
+
+16-09-2026 01:33:12.727 Attaching notify queue to thread
+16-09-2026 01:33:12.727 Initializing service object
+16-09-2026 01:33:12.727 Opening registry
+16-09-2026 01:33:12.742 Initializing coordinator object
+16-09-2026 01:33:12.743 Coordinator ID: AB42BA03-531E-4A75-828B-3A4C3BC7BD34
+16-09-2026 01:33:13.092 Modifying standby setting
+16-09-2026 01:33:13.092 Loading backup coordinator list
+16-09-2026 01:33:13.095 Creating timers
+16-09-2026 01:33:13.096 Creating server object
+16-09-2026 01:33:13.138 Initialization: OpenSSL validation error (details: Certificate chain validation error: certificate signed by unknown authority)
+16-09-2026 01:33:13.138 OpenSSL Cert file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.crt
+16-09-2026 01:33:13.138 OpenSSL private key file loaded from C:\Program Files (x86)\Incredibuild\Certs\Coordinator\Coordinator.key
+16-09-2026 01:33:13.138 OpenSSL cipher list set to AES256+SHA384
+16-09-2026 01:33:13.139 Allocating current version update ID
+16-09-2026 01:33:13.919 Loading subscription information
+16-09-2026 01:33:13.938 [5700|8384] License service initialized
+16-09-2026 01:33:13.950 License information:
+16-09-2026 01:33:13.950 Product Features:
+
+16-09-2026 01:33:13.950 Addon Features:
+
+16-09-2026 01:33:13.950 License Tier: Internal
+16-09-2026 01:33:13.950 Contract End Date: 
+16-09-2026 01:33:13.950 Dashboard Utilization Page: False
+16-09-2026 01:33:13.950 Creating coordinator state object
+16-09-2026 01:33:13.950 Coordinator is active
+16-09-2026 01:33:13.950 Service is running
+16-09-2026 01:33:14.014 Received build groups list json:
+{"BuildGroupsList":[{"Id":"__UNIVERSAL__","Properties":{"CloudEnabled":false,"DisplayName":"Universal Helpers"}},{"Id":"","Properties":{"CloudEnabled":true,"DisplayName":""}}],"IdObject":{"NextId":1}}
+16-09-2026 01:33:14.014 Adding build group to map: ID=__UNIVERSAL__, Display Name=Universal Helpers, CloudEnabled=false
+16-09-2026 01:33:14.014 Adding build group to map: ID=, Display Name=, CloudEnabled=true
+16-09-2026 01:33:19.966 Agent [COORDINATOR_HOST] turned online
+16-09-2026 08:54:07.598 Agent [COORDINATOR_HOST] turned offline
+16-09-2026 08:54:07.598 Agent [COORDINATOR_HOST] did not report for 30 seconds
+16-09-2026 08:54:08.197 Agent [COORDINATOR_HOST] turned online
+19-09-2026 23:29:25.500 Agent [COORDINATOR_HOST] turned offline
+19-09-2026 23:29:26.872 Agent [COORDINATOR_HOST] did not report for 30 seconds
+19-09-2026 23:29:26.921 Agent [COORDINATOR_HOST] turned online
+23-09-2026 23:30:30.500 Agent [COORDINATOR_HOST] turned offline
+23-09-2026 23:30:30.501 Agent [COORDINATOR_HOST] did not report for 30 seconds
+23-09-2026 23:30:31.760 Agent [COORDINATOR_HOST] turned online
+27-09-2026 09:50:47.876 Agent [COORDINATOR_HOST] turned offline
+27-09-2026 09:50:47.990 Agent [COORDINATOR_HOST] did not report for 30 seconds
+27-09-2026 09:50:48.744 Agent [COORDINATOR_HOST] turned online
+29-09-2026 09:20:46.733 Agent [COORDINATOR_HOST] turned offline
+29-09-2026 09:20:46.733 Agent [COORDINATOR_HOST] did not report for 30 seconds
+29-09-2026 09:20:48.488 Agent [COORDINATOR_HOST] turned online
+29-09-2026 13:08:03.501 Agent [COORDINATOR_HOST] turned offline
+29-09-2026 13:08:04.824 Agent [COORDINATOR_HOST] did not report for 30 seconds
+29-09-2026 13:08:04.905 Agent [COORDINATOR_HOST] turned online
+29-09-2026 15:44:14.500 Agent [COORDINATOR_HOST] turned offline
+29-09-2026 15:44:14.984 Agent [COORDINATOR_HOST] did not report for 30 seconds
+29-09-2026 15:44:15.737 Agent [COORDINATOR_HOST] turned online
+30-09-2026 10:12:13.861 Agent [COORDINATOR_HOST] turned offline
+30-09-2026 10:12:13.877 Agent [COORDINATOR_HOST] did not report for 30 seconds
+30-09-2026 10:12:15.619 Agent [COORDINATOR_HOST] turned online
+30-09-2026 18:13:27.500 Agent [COORDINATOR_HOST] turned offline
+30-09-2026 18:13:27.500 Agent [COORDINATOR_HOST] did not report for 30 seconds
+30-09-2026 18:13:29.384 Agent [COORDINATOR_HOST] turned online
+01-10-2026 08:54:59.501 Agent [COORDINATOR_HOST] turned offline
+01-10-2026 08:54:59.501 Agent [COORDINATOR_HOST] did not report for 30 seconds
+01-10-2026 08:55:00.869 Agent [COORDINATOR_HOST] turned online
+01-10-2026 12:18:57.916 [5700|9996] TSocketCommPipe.ReplaceOlderPacketsInQueue> Replacing old message #0 of type TReportAgentPacket
+01-10-2026 12:19:05.531 Agent ib-scl-helper turned offline
+01-10-2026 12:19:05.531 Deleting offline agent ib-scl-helper
+01-10-2026 12:19:05.531 SendDeleteAgentToSubscribers ib-scl-helper
+01-10-2026 12:19:28.825 [5700|9996] TSocketCommPipe.ReplaceOlderPacketsInQueue> Replacing old message #0 of type TReportAgentPacket
+01-10-2026 13:30:20.420 Agent [COORDINATOR_HOST] turned offline
+01-10-2026 13:30:23.260 Agent [COORDINATOR_HOST] turned online
+01-10-2026 14:42:44.357 Agent ib-scl-helper turned offline
+01-10-2026 14:42:44.357 Deleting offline agent ib-scl-helper
+01-10-2026 14:42:44.357 SendDeleteAgentToSubscribers ib-scl-helper
+01-10-2026 14:49:25.089 Agent ib-scl-helper turned offline
+01-10-2026 14:49:25.089 Deleting offline agent ib-scl-helper
+01-10-2026 14:49:25.089 SendDeleteAgentToSubscribers ib-scl-helper
+01-10-2026 14:49:41.256 Agent ib-scl-helper turned offline
+01-10-2026 14:49:41.256 Deleting offline agent ib-scl-helper
+01-10-2026 14:49:41.256 SendDeleteAgentToSubscribers ib-scl-helper
+01-10-2026 14:53:16.712 [5700|9996] TSocketCommPipe.ReplaceOlderPacketsInQueue> Replacing old message #0 of type TReportAgentPacket
+01-10-2026 22:34:17.029 Agent ib-scl-helper turned offline
+01-10-2026 22:34:17.029 Deleting offline agent ib-scl-helper
+01-10-2026 22:34:17.029 SendDeleteAgentToSubscribers ib-scl-helper
+02-10-2026 00:06:07.388 [5700|9996] TSocketCommPipe.ReplaceOlderPacketsInQueue> Replacing old message #0 of type TReportAgentPacket
+02-10-2026 09:56:16.687 Agent ib-scl-helper turned offline
+02-10-2026 09:56:16.687 Deleting offline agent ib-scl-helper
+02-10-2026 09:56:16.687 SendDeleteAgentToSubscribers ib-scl-helper
+02-10-2026 09:56:33.855 Agent ib-scl-helper turned offline
+02-10-2026 09:56:33.855 Deleting offline agent ib-scl-helper
+02-10-2026 09:56:33.855 SendDeleteAgentToSubscribers ib-scl-helper
+02-10-2026 10:30:40.083 Agent ib-scl-helper turned offline
+02-10-2026 10:30:40.083 Deleting offline agent ib-scl-helper
+02-10-2026 10:30:40.083 SendDeleteAgentToSubscribers ib-scl-helper
+02-10-2026 10:30:56.219 Agent ib-scl-helper turned offline
+02-10-2026 10:30:56.219 Deleting offline agent ib-scl-helper
+02-10-2026 10:30:56.219 SendDeleteAgentToSubscribers ib-scl-helper
+02-10-2026 10:38:18.195 Agent ib-scl-helper turned offline
+02-10-2026 10:38:18.195 Deleting offline agent ib-scl-helper
+02-10-2026 10:38:18.195 SendDeleteAgentToSubscribers ib-scl-helper
+02-10-2026 10:52:58.102 Agent ib-scl-helper tries to update 1 times
+02-10-2026 10:52:59.414 [5700|9996] TSocketCommPipe.ReplaceOlderPacketsInQueue> Replacing old message #0 of type TReportAgentPacket
+02-10-2026 10:53:29.420 [5700|9996] TSocketCommPipe.ReplaceOlderPacketsInQueue> Replacing old message #0 of type TReportAgentPacket
+02-10-2026 10:56:08.892 Agent ib-scl-helper turned offline
+02-10-2026 10:56:15.964 Agent ib-scl-helper turned online
+02-10-2026 11:25:09.989 Agent ib-scl-helper turned offline
+02-10-2026 11:25:09.989 Deleting offline agent ib-scl-helper
+02-10-2026 11:25:09.989 SendDeleteAgentToSubscribers ib-scl-helper
+02-10-2026 11:37:03.179 Agent ib-scl-helper tries to update 1 times
+02-10-2026 11:39:40.607 Agent ib-scl-helper turned offline
+02-10-2026 11:39:48.256 Agent ib-scl-helper turned online
+02-10-2026 11:45:48.381 Agent ib-scl-helper turned offline
+02-10-2026 11:45:48.381 Agent ib-scl-helper did not report for 30 seconds
+02-10-2026 11:45:48.381 Deleting offline agent ib-scl-helper
+02-10-2026 11:45:48.381 SendDeleteAgentToSubscribers ib-scl-helper
+02-10-2026 11:46:04.659 [5700|9996] TSocketCommPipe.ReplaceOlderPacketsInQueue> Replacing old message #0 of type TReportAgentPacket
+02-10-2026 11:46:12.662 Agent ib-scl-helper turned offline
+02-10-2026 11:46:12.662 Deleting offline agent ib-scl-helper
+02-10-2026 11:46:12.662 SendDeleteAgentToSubscribers ib-scl-helper
+02-10-2026 11:52:25.331 Agent ib-scl-helper tries to update 1 times
+02-10-2026 11:55:17.079 Agent ib-scl-helper turned offline
+02-10-2026 11:55:23.829 Agent ib-scl-helper turned online
+02-10-2026 11:55:49.367 Agent ib-scl-helper turned offline
+02-10-2026 11:55:49.367 Deleting offline agent ib-scl-helper
+02-10-2026 11:55:49.367 SendDeleteAgentToSubscribers ib-scl-helper
+02-10-2026 17:44:23.760 Agent ib-scl-helper turned offline
+02-10-2026 17:44:23.760 Deleting offline agent ib-scl-helper
+02-10-2026 17:44:23.760 SendDeleteAgentToSubscribers ib-scl-helper
