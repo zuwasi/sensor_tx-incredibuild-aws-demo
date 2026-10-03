@@ -17,3 +17,10 @@ build_bare/
 ib_aws/logs/
 ib_aws/support_build_monitor/
 ib_aws/*.zip
+
+# Parasoft C/C++test scan artifacts
+.cpptest/
+cpptest.bdf
+cpptestscan.bdf
+reports/
+cpptest-scan-localsettings.properties

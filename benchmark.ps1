@@ -91,7 +91,11 @@ if ($baselineSecs -gt 0 -and $ibSecs -gt 0) {
     Write-Host "  Time saved: ${saved}%"
 }
 Write-Host ""
-Write-Host "  (IncrediBuild used the AWS SCL helper registered with your coordinator)"
+Write-Host "  To confirm remote execution, check the build output for tags like"
+Write-Host "  (Agent 'Ib-scl-helper (Core #N)'), or open the .bmon capture in the"
+Write-Host "  IncrediBuild Build Monitor. Note: with /AVOIDLOCAL=ON the build is"
+Write-Host "  forced onto the helper's cores; without it, IncrediBuild prefers"
+Write-Host "  free local cores and the helper may stay idle by design."
 Write-Host "============================================================"
 Write-Host ""
 Write-Host "Press Enter to close..."

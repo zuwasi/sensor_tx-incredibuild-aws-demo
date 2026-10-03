@@ -1,17 +1,24 @@
 # sensor_tx: ThreadX Demo with IncrediBuild + AWS SCL Helper Acceleration
 
 A fully self-contained **ThreadX RTOS sensor demo** (Eclipse CDT project, MinGW/Clang
-on Windows) that builds from the command line and can be accelerated **5x+** by
+on Windows) that builds from the command line and can be accelerated by
 distributing clang compile tasks to a **Linux SCL Helper running on AWS EC2** via
-IncrediBuild.
+IncrediBuild. It also includes a **Parasoft C/C++test static-analysis scan**
+benchmark, including an honest negative result: see
+[Parasoft scan section](#parasoft-cc-test-static-analysis-scan) below.
 
 Reference results from the reference machine (Intel Core Ultra 9 275HX, 24 cores,
-+ 8 remote cores on a `c6i.2xlarge` EC2 helper, clean builds):
++ 8 remote cores on a `c6i.2xlarge` EC2 helper, cold builds, verified 3 Oct 2026):
 
-| Build mode | Clean-build time |
-|---|---|
-| Standard make (1 core) | ~81 s |
-| IncrediBuild (local + AWS SCL helper) | ~15 s (**5.27x speedup**) |
+| Workload | Standard | IncrediBuild (local + AWS SCL helper) |
+|---|---|---|
+| Cold build (standard `make`, serial) | 17.9 s | 18.7 s (helper active: tasks tagged `Ib-scl-helper (Core #N)`) |
+| Parasoft cold scan (traced rebuild + Flow Analysis Standard, 193 files, 13 violations) | 49.8 s | 56.8 s (**no speedup**: IncrediBuild sees 0 offloadable tasks inside `cpptestcli`, see scan section) |
+
+On this reference machine the local box already has 24 fast cores, so a small
+193-file project gains little from adding 8 remote cores; the remote helper
+pays off on weaker initiators or larger projects. The scan result is a
+fundamental limitation, not a configuration problem: details below.
 
 ---
 
@@ -179,6 +186,68 @@ It runs a standard clean build and an IncrediBuild clean build, each with
 
 ---
 
+## Parasoft C/C++test static-analysis scan
+
+This repo also runs a real **Parasoft C/C++test** scan (Flow Analysis Standard)
+over the ThreadX demo, using `cpptestcli` with a traced build
+(`cpptestcli ... -report <dir> -trace make -f Makefile.threadx all`).
+
+### What was measured (3 Oct 2026, same machine)
+
+| Scan mode | Cold-scan time | Violations | Helper tasks |
+|---|---|---|---|
+| Standard cold scan (no IncrediBuild) | 49.8 s | 13 | n/a |
+| Cold scan under `IBConsole /USECLOUDHELPERS=True` | 56.8 s | 13 | **0** |
+
+The IncrediBuild Coordinator reports `Max. Needed Helper Cores = 0` for the scan
+build: `cpptestcli` runs the compiler-instrumentation and analysis phases in its
+own child processes, and none of them are eligible for IncrediBuild
+distribution, even with the interception profile active and the EC2 helper
+idle and ready. The scan is therefore **not faster with IncrediBuild** (it is
+slightly slower due to the tracing overhead). For scan acceleration, use
+`cpptestcli`'s own local parallelism instead.
+
+### Setting up the scan yourself
+
+1. Install **Parasoft C/C++test Professional** and a **DTP server** (the scan
+   publishes results to DTP and needs DTP-based licensing). Start the DTP
+   service and make sure `https://localhost:8443` responds.
+2. If DTP uses a self-signed certificate, export it
+   (`https://localhost:8443` in the browser, or grab it with PowerShell) and
+   import it into the JVM used by `cpptestcli`:
+   ```powershell
+   & "C:\parasoft\CPP_STD\cpptest\bin\jre\bin\keytool.exe" -importcert `
+     -alias dtp2026 -file dtp_cert.cer `
+     -keystore "C:\parasoft\CPP_STD\cpptest\bin\jre\lib\security\cacerts" `
+     -storepass changeit -noprompt
+   ```
+3. Copy `cpptest-scan-localsettings.example.properties` to
+   `cpptest-scan-localsettings.properties` and fill in your DTP URL, user and
+   encoded password, plus your network-license settings. This file is
+   gitignored: never commit it.
+4. Run the benchmark:
+   ```powershell
+   .\scan_benchmark.ps1
+   ```
+   It runs the same cold scan twice (standard, then under IBConsole) and
+   reports times, violation counts, and speedup.
+
+### Why `analysis_stubs/` exists
+
+The ThreadX Win32 port includes real Windows SDK headers
+(`<windows.h>`, `<mmsystem.h>`, `<winbase.h>`), which the Parasoft flow-analysis
+frontend cannot preprocess (it fails silently and reports 0 violations). The
+minimal stub headers in `analysis_stubs/` provide just enough Win32
+declarations for both clang and the Parasoft frontend; `Makefile.threadx` puts
+this directory first on the include path permanently. This is also why the
+planted demo bugs (a 2048-byte `memset` into a 16-byte buffer at
+`sensor_threadx.c:939` and a `strcpy` into a 4-byte buffer at
+`sensor_threadx.c:1389`) are reliably found: the cold scan reports **13
+violations**, including both buffer overflows (BD-PARAM-UNUSED,
+APS-SEC-BUFFER-OVERFLOW and friends).
+
+---
+
 ## Repository layout
 
 ```
@@ -188,9 +257,14 @@ Makefile                 bare-metal target (sensor_tx.exe)
 Makefile.threadx         ThreadX target (sensor_threadx.exe) - the accelerated target
 threadx/                 Eclipse ThreadX kernel sources (upstream license)
 threadx_port/            Windows/MinGW port layer
+analysis_stubs/          minimal Win32 header stubs so Parasoft can preprocess the sources
 profile.xml              IncrediBuild interception profile (distributes clang)
 build.ps1                command-line build (standard or -UseIncrediBuild)
 benchmark.ps1            clean-build benchmark: standard vs IncrediBuild
+scan_benchmark.ps1       Parasoft cold-scan benchmark: standard vs IncrediBuild
+cpptest-scan-localsettings.example.properties
+                         template for your local Parasoft/DTP scan settings (fill in,
+                         rename to cpptest-scan-localsettings.properties, never commit)
 start_and_build.bat      one-click: start EC2 + verify helper + accelerated build
 stop_ec2.bat             stop the EC2 instance to stop billing
 ib_aws/                  CloudFormation template + user-data to create the SCL helper
@@ -204,6 +278,7 @@ ib_aws/                  CloudFormation template + user-data to create the SCL h
 | Build runs but everything stays local | The helper is not registered, or `-UseCloudHelpers:$false` was passed. Rerun `start_and_build.bat` and watch step [4/5]. |
 | Build log says `Agent is not registered as initiator` / `Missing License` and runs in Stand Alone mode | Your machine is not assigned an **Initiator** role on the Coordinator. Open IncrediBuild Manager (`https://localhost:8000`), go to **Agents**, select your Windows machine, then **Set Agent Role** and set **Initiator: Fixed** (requires the license to have Fixed Initiator slots). See the gotcha below. |
 | Helper shows `WorkingFor=` empty forever / tasks never dispatch | The license is missing the **SCL Helpers** product feature. Check with `"C:\Program Files (x86)\IncrediBuild\LicenseServiceConsole.exe" Status <CoordinatorId>`: `ProductFeatures` must contain `SCL Helpers` and the helper agent must show `HelperRegType="Floating"`. Without that feature the coordinator never sends tasks to the Linux helper even though it appears online. |
+| Helper online and licensed but builds still show only `Local CPU N` tags | Open IncrediBuild Manager (`https://localhost:8000`), Agents page, select `ib-scl-helper`, open its `...` menu, **Set Helper Role**. If it shows `None`, that is the bug: set **Floating helper** (cores = 8) and Submit. Activating a new license or a helper agent upgrade can silently reset this role to `None` while the agent still shows `Ready` and `enabled`; the coordinator then reports `Max. Helper Cores = 0` for every build. Verified fix: after setting the role back, the same build showed `Max. Needed Helper Cores = 63, Max. Helper Cores = 8` and output tags `Agent 'Ib-scl-helper (Core #N)'`. |
 | `make not found at C:\MinGW\bin\make.exe` | Do Step 1.3. |
 | `aws` not recognized | Install the AWS CLI (Step 3) and open a new terminal. |
 | Tailscale ping to helper fails | Log in to Tailscale on Windows; on the AWS side confirm the machine shows "Online" at login.tailscale.com/admin/machines. |
@@ -231,6 +306,10 @@ ib_aws/                  CloudFormation template + user-data to create the SCL h
      # then look for InitiatorRegType="Fixed" and RegisteredInitiator="True"
      # on your machine's <Agent> element
      ```
+  3. The same reset can hit the **helper role** of the EC2 SCL agent: after a
+     license change the helper can show Ready/enabled but its **Set Helper
+     Role** is silently back to `None` (0 cores), so nothing dispatches to it.
+     Re-set it to **Floating helper** in the Manager (see Troubleshooting).
 - A useful sanity check before building: the coordinator status XML should show
   the helper agent with `HelperRegType="Floating"` and, once a build starts,
   `WorkingForAgents="<your machine>"` while the initiator shows

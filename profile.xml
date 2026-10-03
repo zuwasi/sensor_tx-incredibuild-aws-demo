@@ -2,6 +2,8 @@
 <Profile FormatVersion="1">
   <Tools>
     <Tool Filename="MainProcess" AllowIntercept="true" />
+    <Tool Filename="cpptestcli" AllowIntercept="true" />
+    <Tool Filename="make" AllowIntercept="true" />
     <Tool Filename="clang" AllowRemote="true" />
   </Tools>
 </Profile>

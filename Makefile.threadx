@@ -20,7 +20,12 @@ THREADX_PORT_INC = threadx_port/inc
 BUILD_DIR = build_threadx
 
 # Include paths
-INCLUDES = -I$(THREADX_COMMON_INC) \
+# analysis_stubs comes first: minimal windows.h/mmsystem.h/winbase.h stubs so
+# the Parasoft C/C++test analysis frontend can preprocess the ThreadX Win32
+# port (see analysis_stubs/windows.h). They are declarations only; the real
+# system headers are still used for anything the stubs do not cover.
+INCLUDES = -Ianalysis_stubs \
+           -I$(THREADX_COMMON_INC) \
            -I$(THREADX_PORT_INC) \
            -I.
 
